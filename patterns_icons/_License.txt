@@ -1,0 +1,6 @@
+These icons are released unter the Creative Commons Attribution 4.0 International License.
+Please include the following in your PNG file and text to give appropriate credit:
+
+CC-BY.png http://www.cloudcomputingpatterns.org
+
+License: http://creativecommons.org/licenses/by/4.0/

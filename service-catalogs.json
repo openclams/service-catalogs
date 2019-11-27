@@ -1,0 +1,7 @@
+[
+	{
+		"target" : "Azure",
+		"company" : "Microsoft",
+		"catalogSrc" : "azure/service-catalog.json" 
+	}
+]
