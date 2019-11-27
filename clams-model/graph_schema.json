@@ -1,0 +1,446 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://example.com/product.schema.json",
+    "title": "Graphs",
+    "description": "A openCLAMS internal model for graphs.",
+    "definitions": {
+        "ucps": {
+            "description": "",
+            "type": "array",
+            "items": {
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "userSettings": {
+                        "$ref": "#/definitions/userSettings"
+                    },
+                    "states": {
+                        "description": "A list of all states in the graph.",
+                        "type": "array",
+                        "items": {
+                            "description": "A vertex has an id, a type (start, state, final) and a geometry.",
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "description": "Newly generated ID or the ID of the corresponding SQD.",
+                                    "type": "string"
+                                },
+                                "sqdId": {
+                                    "description": "Id of the corresponding sqd",
+                                    "type": "string"
+                                },
+                                "vertexType": {
+                                    "type": "string",
+                                    "enum": [
+                                        "start",
+                                        "state",
+                                        "final"
+                                    ]
+                                },
+                                "style": {
+                                    "$ref": "#/definitions/style"
+                                },
+                                "geometry": {
+                                    "$ref": "#/definitions/vertexGeometry"
+                                }
+                            },
+                            "required": [
+                                "id",
+                                "vertexType",
+                                "geometry"
+                            ]
+                        }
+                    },
+                    "arrows": {
+                        "description": "A list of all directed edges connecting two vertices.",
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "tail": {
+                                    "description": "The vertex ID where the tail of the arrow is connected.",
+                                    "type": "string"
+                                },
+                                "head": {
+                                    "description": "The vertex ID where the head of the arrow is connected.",
+                                    "type": "string"
+                                },
+                                "value": {
+                                    "description": "The transition probability of this arrow.",
+                                    "type": "number",
+                                    "minimum": 0,
+                                    "maximum": 1
+                                },
+                                "style": {
+                                    "$ref": "#/definitions/style"
+                                },
+                                "geometry": {
+                                    "$ref": "#/definitions/edgeGeometry"
+                                }
+                            },
+                            "required": [
+                                "tail",
+                                "head",
+                                "value",
+                                "geometry"
+                            ]
+                        }
+                    },
+                    "geometry": {
+                        "$ref": "#/definitions/graphGeometry"
+                    }
+                }
+            },
+            "required": [
+                "id",
+                "name",
+                "userSettings",
+                "geometry"
+            ]
+        },
+        "sqds": {
+            "description": "",
+            "type": "array",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "userSettings": {
+                    "$ref": "#/definitions/userSettings"
+                },
+                "instances": {
+                    "description": "A list of all instance in the graph.",
+                    "type": "array",
+                    "items": {
+                        "description": "An object has an id, a position and a geometry.",
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "description": "Newly generated ID.",
+                                "type": "string"
+                            },
+                            "nodeId": {
+                                "description": "Node Id referencing the service in the refinement-tree",
+                                "type": "string"
+                            },
+                            "position": {
+                                "description": "The position is the visual position from left to right. -1 for calculation irrelevant boxes (e.g. pattern boxes).",
+                                "type": "number"
+                            },
+                            "attr": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object"
+                                }
+                            },
+                            "lifeline": {
+                                "type": "object",
+                                "properties": {
+                                    "geometry": {
+                                        "$ref": "#/definitions/lifelineGeometry"
+                                    },
+                                    "style": {
+                                        "$ref": "#/definitions/style"
+                                    }
+                                }
+                                        },
+                                "style": {
+                                    "$ref": "#/definitions/style"
+                                },
+                                "geometry": {
+                                    "$ref": "#/definitions/vertexGeometry"
+                                }
+                            },
+                            "required": [
+                                "id",
+                                "nodeId",
+                                "position",
+                                "geometry"
+                            ]
+                        }
+                    },
+                    "messages": {
+                        "description": "A list of all directed edges connecting two lifelines of the objects.",
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "tail": {
+                                    "description": "The object ID where the tail of the arrow is connected.",
+                                    "type": "string"
+                                },
+                                "head": {
+                                    "description": "The object ID where the head of the arrow is connected.",
+                                    "type": "string"
+                                },
+                                "position": {
+                                    "description": "The position or order of the messages from top to bottom.",
+                                    "type": "number",
+                                    "minimum": 0
+                                },
+                                "attr": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object"
+                                    }
+                                },
+                                "style": {
+                                    "$ref": "#/definitions/style"
+                                },
+                                "geometry": {
+                                    "$ref": "#/definitions/edgeGeometry"
+                                }
+                            },
+                            "required": [
+                                "tail",
+                                "head",
+                                "position",
+                                "geometry"
+                            ]
+                        }
+                    },
+                    "geometry": {
+                        "$ref": "#/definitions/graphGeometry"
+                    }
+                },
+                "required": [
+                    "id",
+                    "name",
+                    "userSettings",
+                    "geometry"
+                ]
+            },
+            "graphGeometry": {
+                "description": "Geometry of the graph area.",
+                "type": "object",
+                "properties": {
+                    "height": {
+                        "type": "number",
+                        "minimum": 0
+                    },
+                    "width": {
+                        "type": "number",
+                        "minimum": 0
+                    }
+                }
+            },
+            "vertexGeometry": {
+                "description": "A pixel based description of every non edge object in the graph.",
+                "type": "object",
+                "properties": {
+                    "x": {
+                        "description": "X value of the top left corner.",
+                        "type": "number",
+                        "minimum": 0
+                    },
+                    "y": {
+                        "description": "Y value of the top left corner.",
+                        "type": "number",
+                        "minimum": 0
+                    },
+                    "height": {
+                        "type": "number",
+                        "minimum": 0
+                    },
+                    "width": {
+                        "type": "number",
+                        "minimum": 0
+                    },
+                    "vertexType": {
+                        "type": "string",
+                        "enum": [
+                            "image",
+                            "box",
+                            "dot"
+                        ]
+                    },
+                    "imagePath": {
+                        "type": "string"
+                    },
+                    "radius": {
+                        "type": "number",
+                        "minimum": 0
+                    }
+                },
+                "if": {
+                    "properties": {
+                        "vertexType": {
+                            "enum": [
+                                "dot"
+                            ]
+                        }
+                    }
+                },
+                "then": {
+                    "required": [
+                        "x",
+                        "y",
+                        "radius",
+                        "vertexType"
+                    ]
+                },
+                "else": {
+                    "required": [
+                        "x",
+                        "y",
+                        "height",
+                        "width",
+                        "vertexType"
+                    ]
+                }
+            },
+            "edgeGeometry": {
+                "description": "A pixel based description of every non edge object in the graph.",
+                "type": "object",
+                "properties": {
+                    "tailAspect": {
+                        "description": "The side of the vertex where the tail is connected.",
+                        "type": "string",
+                        "enum": [
+                            "top",
+                            "bottom",
+                            "left",
+                            "right"
+                        ]
+                    },
+                    "headAspect": {
+                        "description": "The side of the vertex where the head is connected.",
+                        "type": "string",
+                        "enum": [
+                            "top",
+                            "bottom",
+                            "left",
+                            "right"
+                        ]
+                    },
+                    "tailOffset": {
+                        "description": "Pixel based offset of the connection from left to right or top to bottom.",
+                        "type": "number",
+                        "minimum": 0
+                    },
+                    "headOffset": {
+                        "description": "Pixel based offset of the connection from left to right or top to bottom.",
+                        "type": "number",
+                        "minimum": 0
+                    },
+                    "valueTextPosition": {
+                        "description": "Position of the name (SQD) or probability (UCP) of the edge.",
+                        "type": "object",
+                        "properties": {
+                            "x": {
+                                "type": "number",
+                                "minimum": 0
+                            },
+                            "y": {
+                                "type": "number",
+                                "minimum": 0
+                            }
+                        }
+                    },
+                    "commentTextPosition": {
+                        "description": "Position of the text of the edge.",
+                        "type": "object",
+                        "properties": {
+                            "x": {
+                                "type": "number",
+                                "minimum": 0
+                            },
+                            "y": {
+                                "type": "number",
+                                "minimum": 0
+                            }
+                        }
+                    }
+                },
+                "required": [
+                    "tailAspect",
+                    "headAspect",
+                    "tailOffset",
+                    "headOffset",
+                    "valueTextPosition"
+                ]
+            },
+            "lifelineGeometry": {
+                "description": "A pixel based description of the lifeline attached to vertices of the sqd",
+                "type": "object",
+                "properties": {
+                    "height": {
+                        "type": "number",
+                        "minimum": 0
+                    },
+                    "offset": {
+                        "description": "Offset from the left side of the attached instance.",
+                        "type": "number",
+                        "minimum": 0
+                    }
+                }
+            },
+            "style": {
+                "description": "Style of the vertex including colors, fonts, ...",
+                "type": "object",
+                "properties": {
+                    "fillColor": {
+                        "type": "string",
+                        "default": "#000000"
+                    },
+                    "lineColor": {
+                        "type": "string",
+                        "default": "#ffffff"
+                    },
+                    "lineThickness": {
+                        "type": "number",
+                        "minimum": 0,
+                        "default": 1
+                    },
+                    "lineType": {
+                        "type": "string",
+                        "enum": [
+                            "solid",
+                            "dashed",
+                            "dotted"
+                        ],
+                        "default": "solid"
+                    },
+                    "strokeColor": {
+                        "type": "string",
+                        "default": "#39FF14"
+                    },
+                    "fontColor": {
+                        "type": "string",
+                        "default": "#ffffff"
+                    },
+                    "fontSize": {
+                        "type": "string",
+                        "default": 16,
+                        "minimum": 8
+                    }
+                },
+                "required": [
+                    "lineColor",
+                    "lineThickness",
+                    "lineType",
+                    "strokeColor"
+                ]
+            },
+            "userSettings": {
+                "type": "object",
+                "properties": {
+                    "zoom": {
+                        "type": "number",
+                        "minimum": 0.2,
+                        "maximum": 5,
+                        "default": 1
+                    }
+                }
+            }
+        },
+        "type": "array"
+    }
+
