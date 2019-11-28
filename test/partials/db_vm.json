@@ -97,6 +97,7 @@
         "children": [
             "Virtual_Machine_Linux_Micro",
             "Virtual_Machine_Linux_Large"
+         
         ],
         "attr": {
             "description": {
@@ -116,7 +117,9 @@
         "type": "Node",
         "nodeName": "Virtual Machine Linux Micro",
         "img": "data_icons_png/Virtual_Machine_Linux_Micro.png",
-        "children": [],
+        "children": [
+            
+        ],
         "attr": {
             "scalable": {
                 "name": "Scalable",
