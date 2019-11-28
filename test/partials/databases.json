@@ -1,0 +1,220 @@
+[
+    {
+        "id": "STATEFUL_COMPONENT",
+        "type": "Node",
+        "nodeName": "Stateful Component",
+        "img": "data_icons_png/STATEFUL_COMPONENT.png",
+        "children": [
+            "DATABASE_ABSTRACT"
+        ],
+        "attr": {
+            "description": {
+                "name": "Description",
+                "type": "string",
+                "value": "An abstraction of a component that holds state"
+            },
+            "category": {
+                "name": "Category",
+                "type": "string",
+                "value": "Cloud Patterns"
+            }
+        }
+    },
+    {
+        "id": "DATABASE_ABSTRACT",
+        "type": "Node",
+        "nodeName": "Database",
+        "img": "data_icons_png/DATABASE_ABSTRACT.png",
+        "children": [
+            "BLOB_STORAGE",
+            "RELATIONAL_DATABASE"
+        ],
+        "attr": {
+            "description": {
+                "name": "Description",
+                "type": "string",
+                "value": "An abstract representation of a Database"
+            },
+            "category": {
+                "name": "Category",
+                "type": "string",
+                "value": "Cloud Patterns"
+            }
+        }
+    },
+    {
+        "id": "RELATIONAL_DATABASE",
+        "type": "Node",
+        "nodeName": "Relational Database",
+        "img": "data_icons_png/RELATIONAL_DATABASE.png",
+        "children": [
+            "MYSQL",
+            "MARIADB"
+        ],
+        "attr": {
+            "description": {
+                "name": "Description",
+                "type": "string",
+                "value": "A relational DB like MySQL"
+            },
+            "category": {
+                "name": "Category",
+                "type": "string",
+                "value": "Cloud Patterns"
+            }
+        }
+    },
+    {
+        "id": "BLOB_STORAGE",
+        "type": "Node",
+        "nodeName": "Blob Storage",
+        "img": "data_icons_png/BLOB_STORAGE.png",
+        "children": [
+            "AZURE_BLOB_STORAGE"
+        ],
+        "attr": {
+            "description": {
+                "name": "Description",
+                "type": "string",
+                "value": "A BLOB Storage type of a Database"
+            },
+            "category": {
+                "name": "Category",
+                "type": "string",
+                "value": "Cloud Patterns"
+            }
+        }
+    },
+    {
+        "id": "MYSQL",
+        "type": "Node",
+        "nodeName": "MySQL",
+        "img": "data_icons_png/MYSQL.png",
+        "children": [],
+        "attr": {
+            "scalable": {
+                "name": "Scalable",
+                "type": "boolean",
+                "value": true
+            },
+            "maxscalable": {
+                "name": "Max. Instances",
+                "type": "integer",
+                "value": 3
+            },
+            "reliability": {
+                "name": "Reliability",
+                "type": "number",
+                "value": 98.37
+            },
+            "description": {
+                "name": "Description",
+                "type": "string",
+                "value": "MySQL - a relational DB"
+            },
+            "category": {
+                "name": "Category",
+                "type": "string",
+                "value": "PaaS"
+            },
+            "costs": {
+                "name":"Costs",
+                "type": "number",
+                "value": 0
+            },
+            "costsunit": {
+                "name": "Cost Unit",
+                "type": "string",
+                "value": ""
+            }
+        }
+    },
+    {
+        "id": "MARIADB",
+        "type": "Node",
+        "nodeName": "MariaDB",
+        "img": "data_icons_png/MARIADB.png",
+        "children": [],
+        "attr": {
+            "scalable": {
+                "name": "Scalable",
+                "type": "boolean",
+                "value": true
+            },
+            "maxscalable": {
+                "name": "Max. Instances",
+                "type": "integer",
+                "value": 3
+            },
+            "reliability": {
+                "name": "Reliability",
+                "type": "number",
+                "value": 97.30
+            },
+            "description": {
+                "name": "Description",
+                "type": "string",
+                "value": "Fork of Mysql"
+            },
+            "category": {
+                "name": "Category",
+                "type": "string",
+                "value": "PaaS"
+            },
+            "costs": {
+                "name":"Costs",
+                "type": "number",
+                "value": 0
+            },
+            "costsunit": {
+                "name": "Cost Unit",
+                "type": "string",
+                "value": ""
+            }
+        }
+    },
+    {
+        "id": "AZURE_BLOB_STORAGE",
+        "type": "Node",
+        "nodeName": "Azure Blob Storage",
+        "img": "data_icons_png/AZURE_BLOB_STORAGE.png",
+        "children": [],
+        "attr": {
+            "scalable": {
+                "name": "Scalable",
+                "type": "boolean",
+                "value": true
+            },
+            "maxscalable": {
+                "name": "Max. Instances",
+                "type": "integer",
+                "value": 4
+            },
+            "reliability": {
+                "name": "Reliability",
+                "type": "number",
+                "value": 99.76
+            },
+            "description": {
+                "name": "Description",
+                "type": "string",
+                "value": "An Azure BLOB Storage instance"
+            },
+            "category": {
+                "name": "Category",
+                "type": "string",
+                "value": "PaaS"
+            },
+            "costs": {
+                "name":"Costs",
+                "type": "number",
+                "value": 0.0156
+            },
+            "costsunit": {
+                "name": "Cost Unit",
+                "type": "string",
+                "value": "h"
+            }
+        }
+    }
+]
