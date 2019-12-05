@@ -3,7 +3,7 @@
         "id": "THREE_TIER_PATTERN",
         "name": "Three-Tier-Pattern",
         "type": "Template",
-        "img": "data_icons_png/THREE_TIER_PATTERN.png",
+        "img": "icons/THREE_TIER_PATTERN.png",
         "components": [
             {
                 "id": "USER_INTERFACE_COMPONENT",
@@ -26,7 +26,7 @@
         "id": "TWO_TIER_PATTERN",
         "name": "Two-Tier-Pattern",
         "type": "Template",
-        "img": "data_icons_png/TWO_TIER_PATTERN.png",
+        "img": "icons/TWO_TIER_PATTERN.png",
         "components": [
             {
                 "id": "PROCESSING_COMPONENT",
@@ -44,7 +44,7 @@
         "id": "VM_AS_A_SERVICE",
         "name": "VM as a Service",
         "type": "Template",
-        "img": "data_icons_png/VM_AS_A_SERVICE.png",
+        "img": "icons/VM_AS_A_SERVICE.png",
         "components": [
             {
                 "id": "Load_Balancer_for_VMs",

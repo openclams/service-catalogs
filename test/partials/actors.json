@@ -3,7 +3,7 @@
         "id": "ACTOR_DEFAULT",
         "type": "Node",
         "nodeName": "Default Actor",
-        "img": "data_icons_png/ACTOR_DEFAULT.png",
+        "img": "icons/ACTOR_DEFAULT.png",
         "children": [],
         "attr": {
             "reliability": {
@@ -37,7 +37,7 @@
         "id": "ACTOR_COMPANY_XYZ",
         "type": "Node",
         "nodeName": "Company Xyz GmbH",
-        "img": "data_icons_png/ACTOR_COMPANY_XYZ.png",
+        "img": "icons/ACTOR_COMPANY_XYZ.png",
         "children": [],
         "attr": {
             "reliability": {

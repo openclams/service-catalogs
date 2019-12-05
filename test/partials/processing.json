@@ -3,7 +3,7 @@
     "id": "STATELESS_COMPONENT",
     "type": "Node",
     "nodeName": "Stateless Component",
-    "img": "data_icons_png/STATELESS_COMPONENT.png",
+    "img": "icons/STATELESS_COMPONENT.png",
     "children": [
       "PROCESSING_COMPONENT",
       "MESSAGE_BROKER"
@@ -25,7 +25,7 @@
     "id": "PROCESSING_COMPONENT",
     "type": "Node",
     "nodeName": "Processing Component",
-    "img": "data_icons_png/PROCESSING_COMPONENT.png",
+    "img": "icons/PROCESSING_COMPONENT.png",
     "children": [
       "SPRING_FRAMEWORK"
     ],
@@ -46,7 +46,7 @@
     "id": "SPRING_FRAMEWORK",
     "type": "Node",
     "nodeName": "Spring Boot Service",
-    "img": "data_icons_png/SPRING_FRAMEWORK.png",
+    "img": "icons/SPRING_FRAMEWORK.png",
     "children": [],
     "attr": {
       "scalable": {
@@ -90,7 +90,7 @@
     "id": "USER_INTERFACE_COMPONENT",
     "type": "Node",
     "nodeName": "Frontend",
-    "img": "data_icons_png/USER_INTERFACE_COMPONENT.png",
+    "img": "icons/USER_INTERFACE_COMPONENT.png",
     "children": [
       "ANGULAR_FRONTEND"
     ],
@@ -111,7 +111,7 @@
     "id": "ANGULAR_FRONTEND",
     "type": "Node",
     "nodeName": "Angular Frontend",
-    "img": "data_icons_png/ANGULAR_FRONTEND.png",
+    "img": "icons/ANGULAR_FRONTEND.png",
     "children": [],
     "attr": {
       "scalable": {
@@ -155,7 +155,7 @@
     "id": "MESSAGE_BROKER",
     "type": "Node",
     "nodeName": "Messaging Broker",
-    "img": "data_icons_png/MESSAGE_BROKER.png",
+    "img": "icons/MESSAGE_BROKER.png",
     "children": [
       "RabbitMQ"
     ],
@@ -176,7 +176,7 @@
     "id": "LOAD_BALANCER",
     "type": "Node",
     "nodeName": "Load Balancer",
-    "img": "data_icons_png/LOAD_BALANCER.png",
+    "img": "icons/LOAD_BALANCER.png",
     "children": [],
     "attr": {
       "scalable": {

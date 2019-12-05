@@ -4,7 +4,7 @@
             "id": "ACTOR_DEFAULT",
             "type": "Node",
             "nodeName": "Default Actor",
-            "img": "data_icons_png/ACTOR_DEFAULT.png",
+            "img": "icons/ACTOR_DEFAULT.png",
             "children": [],
             "attr": {
                 "reliability": {
@@ -38,7 +38,7 @@
             "id": "ACTOR_COMPANY_XYZ",
             "type": "Node",
             "nodeName": "Company Xyz GmbH",
-            "img": "data_icons_png/ACTOR_COMPANY_XYZ.png",
+            "img": "icons/ACTOR_COMPANY_XYZ.png",
             "children": [],
             "attr": {
                 "reliability": {
@@ -140,7 +140,7 @@
                                 "category": {
                                     "name": "Category",
                                     "type": "string",
-                                    "value": "Cloud Patterns"
+                                    "value": "Cloud icons"
                                 }
                             }
                         },
@@ -248,7 +248,7 @@
                                 "category": {
                                     "name": "Category",
                                     "type": "string",
-                                    "value": "Cloud Patterns"
+                                    "value": "Cloud icons"
                                 }
                             }
                         }
@@ -262,7 +262,7 @@
                         "category": {
                             "name": "Category",
                             "type": "string",
-                            "value": "Cloud Patterns"
+                            "value": "Cloud icons"
                         }
                     }
                 }
@@ -276,7 +276,7 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "Cloud Patterns"
+                    "value": "Cloud icons"
                 }
             }
         },
@@ -284,13 +284,13 @@
             "id": "MongoDB",
             "type": "Node",
             "nodeName": "MongoDB",
-            "img": "data_icons_png/MongoDB.png",
+            "img": "icons/MongoDB.png",
             "children": [
                 {
                     "id": "MongoDB_Free",
                     "type": "Node",
                     "nodeName": "MongoDB Free",
-                    "img": "data_icons_png/MongoDB_Free.png",
+                    "img": "icons/MongoDB_Free.png",
                     "children": [],
                     "attr": {
                         "description": {
@@ -334,7 +334,7 @@
                     "id": "MongoDB_Shared",
                     "type": "Node",
                     "nodeName": "MongoDB Shared",
-                    "img": "data_icons_png/MongoDB_Shared.png",
+                    "img": "icons/MongoDB_Shared.png",
                     "children": [],
                     "attr": {
                         "description": {
@@ -392,13 +392,13 @@
             "id": "Virtual_Machine_Linux",
             "type": "Node",
             "nodeName": "Virtual Machine Linux",
-            "img": "data_icons_png/Virtual_Machine_Linux.png",
+            "img": "icons/Virtual_Machine_Linux.png",
             "children": [
                 {
                     "id": "Virtual_Machine_Linux_Micro",
                     "type": "Node",
                     "nodeName": "Virtual Machine Linux Micro",
-                    "img": "data_icons_png/Virtual_Machine_Linux_Micro.png",
+                    "img": "icons/Virtual_Machine_Linux_Micro.png",
                     "children": [],
                     "attr": {
                         "description": {
@@ -442,7 +442,7 @@
                     "id": "Virtual_Machine_Linux_Large",
                     "type": "Node",
                     "nodeName": "Virtual Machine Linux Large",
-                    "img": "data_icons_png/Virtual_Machine_Linux_Large.png",
+                    "img": "icons/Virtual_Machine_Linux_Large.png",
                     "children": [],
                     "attr": {
                         "description": {
@@ -500,13 +500,13 @@
             "id": "Virtual_Machine_Jump_Host",
             "type": "Node",
             "nodeName": "Virtual Machine Jump Host",
-            "img": "data_icons_png/Virtual_Machine_Jump_Host.png",
+            "img": "icons/Virtual_Machine_Jump_Host.png",
             "children": [
                 {
                     "id": "Virtual_Machine_Jump_Host_Linux_SSH",
                     "type": "Node",
                     "nodeName": "Virtual Machine Jump Host Linux SSH",
-                    "img": "data_icons_png/Virtual_Machine_Jump_Host_Linux_SSH.png",
+                    "img": "icons/Virtual_Machine_Jump_Host_Linux_SSH.png",
                     "children": [],
                     "attr": {
                         "description": {
@@ -564,13 +564,13 @@
             "id": "Elastic_Runtime",
             "type": "Node",
             "nodeName": "Elastic Runtime",
-            "img": "data_icons_png/Elastic_Runtime.png",
+            "img": "icons/Elastic_Runtime.png",
             "children": [
                 {
                     "id": "Elastic_Runtime_Micro",
                     "type": "Node",
                     "nodeName": "Elastic Runtime Micro",
-                    "img": "data_icons_png/Elastic_Runtime_Micro.png",
+                    "img": "icons/Elastic_Runtime_Micro.png",
                     "children": [],
                     "attr": {
                         "description": {
@@ -614,7 +614,7 @@
                     "id": "Elastic_Runtime_Medium",
                     "type": "Node",
                     "nodeName": "Elastic Runtime Medium",
-                    "img": "data_icons_png/Elastic_Runtime_Medium.png",
+                    "img": "icons/Elastic_Runtime_Medium.png",
                     "children": [],
                     "attr": {
                         "description": {
@@ -658,7 +658,7 @@
                     "id": "Elastic_Runtime_Large",
                     "type": "Node",
                     "nodeName": "Elastic Runtime Large",
-                    "img": "data_icons_png/Elastic_Runtime_Large.png",
+                    "img": "icons/Elastic_Runtime_Large.png",
                     "children": [],
                     "attr": {
                         "description": {
@@ -716,19 +716,19 @@
             "id": "STATELESS_COMPONENT",
             "type": "Node",
             "nodeName": "Stateless Component",
-            "img": "data_icons_png/STATELESS_COMPONENT.png",
+            "img": "icons/STATELESS_COMPONENT.png",
             "children": [
                 {
                     "id": "PROCESSING_COMPONENT",
                     "type": "Node",
                     "nodeName": "Processing Component",
-                    "img": "data_icons_png/PROCESSING_COMPONENT.png",
+                    "img": "icons/PROCESSING_COMPONENT.png",
                     "children": [
                         {
                             "id": "SPRING_FRAMEWORK",
                             "type": "Node",
                             "nodeName": "Spring Boot Service",
-                            "img": "data_icons_png/SPRING_FRAMEWORK.png",
+                            "img": "icons/SPRING_FRAMEWORK.png",
                             "children": [],
                             "attr": {
                                 "description": {
@@ -786,19 +786,19 @@
                     "id": "MESSAGE_BROKER",
                     "type": "Node",
                     "nodeName": "Messaging Broker",
-                    "img": "data_icons_png/MESSAGE_BROKER.png",
+                    "img": "icons/MESSAGE_BROKER.png",
                     "children": [
                         {
                             "id": "RabbitMQ",
                             "type": "Node",
                             "nodeName": "RabbitMQ",
-                            "img": "data_icons_png/RabbitMQ.png",
+                            "img": "icons/RabbitMQ.png",
                             "children": [
                                 {
                                     "id": "RabbitMQ_Shared",
                                     "type": "Node",
                                     "nodeName": "RabbitMQ Shared",
-                                    "img": "data_icons_png/RabbitMQ_Shared.png",
+                                    "img": "icons/RabbitMQ_Shared.png",
                                     "children": [],
                                     "attr": {
                                         "description": {
@@ -884,13 +884,13 @@
             "id": "USER_INTERFACE_COMPONENT",
             "type": "Node",
             "nodeName": "Frontend",
-            "img": "data_icons_png/USER_INTERFACE_COMPONENT.png",
+            "img": "icons/USER_INTERFACE_COMPONENT.png",
             "children": [
                 {
                     "id": "ANGULAR_FRONTEND",
                     "type": "Node",
                     "nodeName": "Angular Frontend",
-                    "img": "data_icons_png/ANGULAR_FRONTEND.png",
+                    "img": "icons/ANGULAR_FRONTEND.png",
                     "children": [],
                     "attr": {
                         "description": {
@@ -948,7 +948,7 @@
             "id": "LOAD_BALANCER",
             "type": "Node",
             "nodeName": "Load Balancer",
-            "img": "data_icons_png/LOAD_BALANCER.png",
+            "img": "icons/LOAD_BALANCER.png",
             "children": [],
             "attr": {
                 "scalable": {
@@ -1036,7 +1036,7 @@
             "id": "THREE_TIER_PATTERN",
             "name": "Three-Tier-Pattern",
             "type": "Template",
-            "img": "data_icons_png/THREE_TIER_PATTERN.png",
+            "img": "icons/THREE_TIER_PATTERN.png",
             "components": [
                 {
                     "id": "USER_INTERFACE_COMPONENT",
@@ -1059,7 +1059,7 @@
             "id": "TWO_TIER_PATTERN",
             "name": "Two-Tier-Pattern",
             "type": "Template",
-            "img": "data_icons_png/TWO_TIER_PATTERN.png",
+            "img": "icons/TWO_TIER_PATTERN.png",
             "components": [
                 {
                     "id": "PROCESSING_COMPONENT",
@@ -1077,7 +1077,7 @@
             "id": "VM_AS_A_SERVICE",
             "name": "VM as a Service",
             "type": "Template",
-            "img": "data_icons_png/VM_AS_A_SERVICE.png",
+            "img": "icons/VM_AS_A_SERVICE.png",
             "components": [
                 {
                     "id": "Load_Balancer_for_VMs",
