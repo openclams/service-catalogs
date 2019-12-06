@@ -1,7 +1,9 @@
 [
 	{
-		"target" : "Azure",
-		"company" : "Microsoft",
-		"catalogSrc" : "azure/service-catalog.json" 
+		"target" : "Test",
+		"company" : "Clams",
+		"basePath" : "test",
+		"catalogFile" : "service-catalog.json",
+		"image" : "clams.png" 
 	}
 ]

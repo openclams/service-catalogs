@@ -3,7 +3,7 @@
         "id": "STATEFUL_COMPONENT",
         "type": "Node",
         "nodeName": "Stateful Component",
-        "img": "data_icons_png/STATEFUL_COMPONENT.png",
+        "img": "../pattern_icons/stateful_componentabstract_database.png",
         "children": [
             "DATABASE_ABSTRACT"
         ],
@@ -24,7 +24,7 @@
         "id": "DATABASE_ABSTRACT",
         "type": "Node",
         "nodeName": "Database",
-        "img": "data_icons_png/DATABASE_ABSTRACT.png",
+        "img": "../pattern_icons/abstract_database.png",
         "children": [
             "BLOB_STORAGE",
             "RELATIONAL_DATABASE"
@@ -46,7 +46,7 @@
         "id": "RELATIONAL_DATABASE",
         "type": "Node",
         "nodeName": "Relational Database",
-        "img": "data_icons_png/RELATIONAL_DATABASE.png",
+        "img": "../pattern_icons/relational_database.png",
         "children": [
             "MYSQL",
             "MARIADB"
@@ -68,7 +68,7 @@
         "id": "BLOB_STORAGE",
         "type": "Node",
         "nodeName": "Blob Storage",
-        "img": "data_icons_png/BLOB_STORAGE.png",
+        "img": "../pattern_icons/blob_storage.png",
         "children": [
             "AZURE_BLOB_STORAGE"
         ],
@@ -89,7 +89,7 @@
         "id": "MYSQL",
         "type": "Node",
         "nodeName": "MySQL",
-        "img": "data_icons_png/MYSQL.png",
+        "img": "icons/MYSQL.png",
         "children": [],
         "attr": {
             "scalable": {
@@ -133,7 +133,7 @@
         "id": "MARIADB",
         "type": "Node",
         "nodeName": "MariaDB",
-        "img": "data_icons_png/MARIADB.png",
+        "img": "icons/MARIADB.png",
         "children": [],
         "attr": {
             "scalable": {
@@ -177,7 +177,7 @@
         "id": "AZURE_BLOB_STORAGE",
         "type": "Node",
         "nodeName": "Azure Blob Storage",
-        "img": "data_icons_png/AZURE_BLOB_STORAGE.png",
+        "img": "icons/AZURE_BLOB_STORAGE.png",
         "children": [],
         "attr": {
             "scalable": {

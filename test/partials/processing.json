@@ -3,7 +3,7 @@
     "id": "STATELESS_COMPONENT",
     "type": "Node",
     "nodeName": "Stateless Component",
-    "img": "icons/STATELESS_COMPONENT.png",
+    "img": "../pattern_icons/stateless_component.png",
     "children": [
       "PROCESSING_COMPONENT",
       "MESSAGE_BROKER"
@@ -25,7 +25,7 @@
     "id": "PROCESSING_COMPONENT",
     "type": "Node",
     "nodeName": "Processing Component",
-    "img": "icons/PROCESSING_COMPONENT.png",
+    "img": "../pattern_icons/processing_component.png",
     "children": [
       "SPRING_FRAMEWORK"
     ],
@@ -90,7 +90,7 @@
     "id": "USER_INTERFACE_COMPONENT",
     "type": "Node",
     "nodeName": "Frontend",
-    "img": "icons/USER_INTERFACE_COMPONENT.png",
+    "img": "../pattern_icons/user_interface_component.png",
     "children": [
       "ANGULAR_FRONTEND"
     ],
@@ -155,7 +155,7 @@
     "id": "MESSAGE_BROKER",
     "type": "Node",
     "nodeName": "Messaging Broker",
-    "img": "icons/MESSAGE_BROKER.png",
+    "img": "../pattern_icons/message-oriented_middleware.png",
     "children": [
       "RabbitMQ"
     ],
@@ -176,7 +176,7 @@
     "id": "LOAD_BALANCER",
     "type": "Node",
     "nodeName": "Load Balancer",
-    "img": "icons/LOAD_BALANCER.png",
+    "img": "../pattern_icons/elastic_load_balancer.png",
     "children": [],
     "attr": {
       "scalable": {
