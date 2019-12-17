@@ -1,0 +1,294 @@
+[
+    {
+        "id": "AzureVm",
+        "type": "Node",
+        "nodeName": "AzureVM",
+        "children": [
+            "AzureVmService"
+        ],
+        "attr": {
+            "description": {
+                "name": "Description",
+                "type": "string",
+                "value": "Infrastructure as a Service Components."
+            },
+            "category": {
+                "name": "Category",
+                "type": "string",
+                "value": "IaaS"
+            }
+        }
+    },
+    {
+        "id": "AzureVmService",
+        "type": "Node",
+        "nodeName": "AzureVmService",
+        "img": "icons/azure_vm.png",
+        "children": [],
+        "attr": {
+            "scalable": {
+                "name": "Scalable",
+                "type": "boolean",
+                "value": false
+            },
+            "maxscalable": {
+                "name": "Max. Instances",
+                "type": "integer",
+                "value": 1
+            },
+            "reliability": {
+                "name": "Reliability",
+                "type": "number",
+                "value": 95.73
+            },
+            "costs": {
+                "name": "Costs",
+                "type": "number",
+                "value": 0
+            },
+            "costsunit": {
+                "name": "Cost Unit",
+                "type": "string",
+                "value": ""
+            },
+            "instance": {
+                "Germany": {
+                    "A0": {
+                        "reliability": {
+                            "name": "reliability",
+                            "type": "number",
+                            "value": 99.99
+                        },
+                        "cost": {
+                            "name": "const",
+                            "type": "number",
+                            "value": 0.086
+                        },
+                        "unit": {
+                            "name": "unit",
+                            "type": "string",
+                            "value": "hour"
+                        },
+                        "currency": {
+                            "name": "currency",
+                            "type": "string",
+                            "value": "dolar"
+                        }
+                    },
+                    "A1": {
+                        "reliability": {
+                            "name": "reliability",
+                            "type": "string",
+                            "value": "99.99"
+                        },
+                        "cost": {
+                            "name": "const",
+                            "type": "float",
+                            "value": 0.099
+                        },
+                        "unit": {
+                            "name": "unit",
+                            "type": "string",
+                            "value": "hour"
+                        },
+                        "currency": {
+                            "name": "currency",
+                            "type": "string",
+                            "value": "dolar"
+                        }
+                    }
+                },
+                "USA": {
+                    "A0": {
+                        "reliability": {
+                            "name": "reliability",
+                            "type": "number",
+                            "value": 99.99
+                        },
+                        "cost": {
+                            "name": "const",
+                            "type": "number",
+                            "value": 0.02
+                        },
+                        "unit": {
+                            "name": "unit",
+                            "type": "string",
+                            "value": "hour"
+                        },
+                        "currency": {
+                            "name": "currency",
+                            "type": "string",
+                            "value": "dolar"
+                        }
+                    },
+                    "A1": {
+                        "reliability": {
+                            "name": "reliability",
+                            "type": "string",
+                            "value": "99.99"
+                        },
+                        "cost": {
+                            "name": "const",
+                            "type": "float",
+                            "value": 0.034
+                        },
+                        "unit": {
+                            "name": "unit",
+                            "type": "string",
+                            "value": "hour"
+                        },
+                        "currency": {
+                            "name": "currency",
+                            "type": "string",
+                            "value": "dolar"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    {
+    "id": "DATABASE_ABSTRACT",
+    "type": "Node",
+    "nodeName": "Database",
+    "img": "../pattern_icons/abstract_database.png",
+    "children": [
+    "BLOB_STORAGE",
+    "RELATIONAL_DATABASE"
+],
+    "attr": {
+    "description": {
+        "name": "Description",
+        "type": "string",
+        "value": "An abstract representation of a Database"
+    },
+    "category": {
+        "name": "Category",
+        "type": "string",
+        "value": "Cloud icons"
+    },
+        
+}
+    },
+
+    {
+        "id": "AzureFaaS",
+        "type": "Node",
+        "nodeName": "AzureFaaS",
+        "children": [
+            "AzureFunctionService"
+        ],
+        "attr": {
+            "description": {
+                "name": "Description",
+                "type": "string",
+                "value": "Database Instances of Azure"
+            },
+            "category": {
+                "name": "Category",
+                "type": "string",
+                "value": "FaaS"
+            }
+        }
+    },
+    {
+        "id": "AzureFunctionService",
+        "type": "Node",
+        "nodeName": "AzureFunctionService",
+        "img": "icons/Azure_FaaS.png",
+        "children": [],
+        "attr": {
+            "scalable": {
+                "name": "Scalable",
+                "type": "boolean",
+                "value": false
+            },
+            "maxscalable": {
+                "name": "Max. Instances",
+                "type": "integer",
+                "value": 1
+            },
+            "reliability": {
+                "name": "Reliability",
+                "type": "number",
+                "value": 95.73
+            },
+            "costs": {
+                "name": "Costs",
+                "type": "number",
+                "value": 0
+            },
+            "costsunit": {
+                "name": "Cost Unit",
+                "type": "string",
+                "value": ""
+            },
+            "instance": {
+                "Germany": {
+                    "reliability": {
+                        "name": "reliability",
+                        "type": "number",
+                        "value": 99.99
+                    },
+                    "cost": {
+                        "name": "const",
+                        "type": "number",
+                        "value": 0.20
+                    },
+                    "unit": {
+                        "name": "unit",
+                        "type": "number",
+                        "value": ""
+                    },
+                    "ram": {
+                        "name": "ram",
+                        "type": "number",
+                        "value": ""
+                    },
+                    "executiontime": {
+                        "name": "executiontime",
+                        "type": "number",
+                        "value": ""
+                    },
+                    "currency": {
+                        "name": "currency",
+                        "type": "string",
+                        "value": "dolar"
+                    }
+                },
+                "USA": {
+                    "reliability": {
+                        "name": "reliability",
+                        "type": "number",
+                        "value": 99.99
+                    },
+                    "cost": {
+                        "name": "const",
+                        "type": "number",
+                        "value": 0.20
+                    },
+                    "unit": {
+                        "name": "unit",
+                        "type": "number",
+                        "value": ""
+                    },
+                    "ram": {
+                        "name": "ram",
+                        "type": "number",
+                        "value": ""
+                    },
+                    "executiontime": {
+                        "name": "executiontime",
+                        "type": "number",
+                        "value": ""
+                    },
+                    "currency": {
+                        "name": "currency",
+                        "type": "string",
+                        "value": "dolar"
+                    }
+                }
+            }
+        }
+    }
+]

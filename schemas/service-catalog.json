@@ -16,15 +16,38 @@
                 "nodeName": {
                     "type": "string"
                 },
-                "img": {
-                    "title": "Relative path of the image source",
-                    "type": "string"
-                },
                 "children": {
                     "type": "array",
                     "items": {
                         "title": "ID of another node",
                         "type": "string"
+                    }
+                },
+                "instance": {
+                    "type": "array",
+                    "items": {
+                        "region": {
+                            "type": "array",
+                            "items": {
+                                "id": {
+                                    "type": "string"
+                                },
+                                "cost": {
+                                    "type": "float"
+                                },
+                                "reliability": {
+                                    "type": "float"
+                                },
+                                "currency": {
+                                    "type": "string"
+                                },
+                                "unit": {
+                                    "type": "string"
+                                }
+
+                            }
+
+                        }
                     }
                 },
                 "attr": {
@@ -248,7 +271,6 @@
             ]
         }
     },
-    "type": "array",
     "items": {
         "anyOf": [
             {

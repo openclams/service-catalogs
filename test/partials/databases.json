@@ -127,6 +127,32 @@
                 "type": "string",
                 "value": ""
             }
+        },
+        "instance": {
+            "Germany": {
+                "S1": {
+                    "reliability": {
+                        "name": "reliability",
+                        "type": "number",
+                        "value": 99.99
+                    },
+                    "cost": {
+                        "name": "const",
+                        "type": "float",
+                        "value": 12.12
+                    },
+                    "unit":{
+                        "name": "unit",
+                        "type": "string",
+                        "value": "hour"
+                    },
+                    "currency":{
+                        "name": "currency",
+                        "type": "string",
+                        "value": "euro"
+                    }
+                }
+            }
         }
     },
     {

@@ -1,286 +1,6 @@
 {
     "Nodes": [
         {
-            "id": "ACTOR_DEFAULT",
-            "type": "Node",
-            "nodeName": "Default Actor",
-            "img": "icons/ACTOR_DEFAULT.png",
-            "children": [],
-            "attr": {
-                "reliability": {
-                    "name": "Reliability",
-                    "type": "number",
-                    "value": 100
-                },
-                "category": {
-                    "name": "Category",
-                    "type": "string",
-                    "value": "Actors"
-                },
-                "scalable": {
-                    "name": "Scalable",
-                    "type": "boolean",
-                    "value": false
-                },
-                "maxscalable": {
-                    "name": "Max. Instances",
-                    "type": "integer",
-                    "value": 1
-                },
-                "description": {
-                    "name": "Description",
-                    "type": "string",
-                    "value": "My Chef the bottleneck"
-                }
-            }
-        },
-        {
-            "id": "ACTOR_COMPANY_XYZ",
-            "type": "Node",
-            "nodeName": "Company Xyz GmbH",
-            "img": "icons/ACTOR_COMPANY_XYZ.png",
-            "children": [],
-            "attr": {
-                "reliability": {
-                    "name": "Reliability",
-                    "type": "number",
-                    "value": 100
-                },
-                "category": {
-                    "name": "Category",
-                    "type": "string",
-                    "value": "Actors"
-                },
-                "scalable": {
-                    "name": "Scalable",
-                    "type": "boolean",
-                    "value": false
-                },
-                "maxscalable": {
-                    "name": "Max. Instances",
-                    "type": "integer",
-                    "value": 1
-                },
-                "description": {
-                    "name": "Description",
-                    "type": "string",
-                    "value": "The company xyz delivers the data."
-                }
-            }
-        },
-        {
-            "id": "STATEFUL_COMPONENT",
-            "type": "Node",
-            "nodeName": "Stateful Component",
-            "img": "data_icons_png/STATEFUL_COMPONENT.png",
-            "children": [
-                {
-                    "id": "DATABASE_ABSTRACT",
-                    "type": "Node",
-                    "nodeName": "Database",
-                    "img": "data_icons_png/DATABASE_ABSTRACT.png",
-                    "children": [
-                        {
-                            "id": "BLOB_STORAGE",
-                            "type": "Node",
-                            "nodeName": "Blob Storage",
-                            "img": "data_icons_png/BLOB_STORAGE.png",
-                            "children": [
-                                {
-                                    "id": "AZURE_BLOB_STORAGE",
-                                    "type": "Node",
-                                    "nodeName": "Azure Blob Storage",
-                                    "img": "data_icons_png/AZURE_BLOB_STORAGE.png",
-                                    "children": [],
-                                    "attr": {
-                                        "description": {
-                                            "name": "Description",
-                                            "type": "string",
-                                            "value": "An Azure BLOB Storage instance"
-                                        },
-                                        "category": {
-                                            "name": "Category",
-                                            "type": "string",
-                                            "value": "PaaS"
-                                        },
-                                        "scalable": {
-                                            "name": "Scalable",
-                                            "type": "boolean",
-                                            "value": true
-                                        },
-                                        "maxscalable": {
-                                            "name": "Max. Instances",
-                                            "type": "integer",
-                                            "value": 4
-                                        },
-                                        "reliability": {
-                                            "name": "Reliability",
-                                            "type": "number",
-                                            "value": 99.76
-                                        },
-                                        "costs": {
-                                            "name": "Costs",
-                                            "type": "number",
-                                            "value": 0.0156
-                                        },
-                                        "costsunit": {
-                                            "name": "Cost Unit",
-                                            "type": "string",
-                                            "value": "h"
-                                        }
-                                    }
-                                }
-                            ],
-                            "attr": {
-                                "description": {
-                                    "name": "Description",
-                                    "type": "string",
-                                    "value": "A BLOB Storage type of a Database"
-                                },
-                                "category": {
-                                    "name": "Category",
-                                    "type": "string",
-                                    "value": "Cloud icons"
-                                }
-                            }
-                        },
-                        {
-                            "id": "RELATIONAL_DATABASE",
-                            "type": "Node",
-                            "nodeName": "Relational Database",
-                            "img": "data_icons_png/RELATIONAL_DATABASE.png",
-                            "children": [
-                                {
-                                    "id": "MYSQL",
-                                    "type": "Node",
-                                    "nodeName": "MySQL",
-                                    "img": "data_icons_png/MYSQL.png",
-                                    "children": [],
-                                    "attr": {
-                                        "description": {
-                                            "name": "Description",
-                                            "type": "string",
-                                            "value": "MySQL - a relational DB"
-                                        },
-                                        "category": {
-                                            "name": "Category",
-                                            "type": "string",
-                                            "value": "PaaS"
-                                        },
-                                        "scalable": {
-                                            "name": "Scalable",
-                                            "type": "boolean",
-                                            "value": true
-                                        },
-                                        "maxscalable": {
-                                            "name": "Max. Instances",
-                                            "type": "integer",
-                                            "value": 3
-                                        },
-                                        "reliability": {
-                                            "name": "Reliability",
-                                            "type": "number",
-                                            "value": 98.37
-                                        },
-                                        "costs": {
-                                            "name": "Costs",
-                                            "type": "number",
-                                            "value": 0
-                                        },
-                                        "costsunit": {
-                                            "name": "Cost Unit",
-                                            "type": "string",
-                                            "value": ""
-                                        }
-                                    }
-                                },
-                                {
-                                    "id": "MARIADB",
-                                    "type": "Node",
-                                    "nodeName": "MariaDB",
-                                    "img": "data_icons_png/MARIADB.png",
-                                    "children": [],
-                                    "attr": {
-                                        "description": {
-                                            "name": "Description",
-                                            "type": "string",
-                                            "value": "Fork of Mysql"
-                                        },
-                                        "category": {
-                                            "name": "Category",
-                                            "type": "string",
-                                            "value": "PaaS"
-                                        },
-                                        "scalable": {
-                                            "name": "Scalable",
-                                            "type": "boolean",
-                                            "value": true
-                                        },
-                                        "maxscalable": {
-                                            "name": "Max. Instances",
-                                            "type": "integer",
-                                            "value": 3
-                                        },
-                                        "reliability": {
-                                            "name": "Reliability",
-                                            "type": "number",
-                                            "value": 97.3
-                                        },
-                                        "costs": {
-                                            "name": "Costs",
-                                            "type": "number",
-                                            "value": 0
-                                        },
-                                        "costsunit": {
-                                            "name": "Cost Unit",
-                                            "type": "string",
-                                            "value": ""
-                                        }
-                                    }
-                                }
-                            ],
-                            "attr": {
-                                "description": {
-                                    "name": "Description",
-                                    "type": "string",
-                                    "value": "A relational DB like MySQL"
-                                },
-                                "category": {
-                                    "name": "Category",
-                                    "type": "string",
-                                    "value": "Cloud icons"
-                                }
-                            }
-                        }
-                    ],
-                    "attr": {
-                        "description": {
-                            "name": "Description",
-                            "type": "string",
-                            "value": "An abstract representation of a Database"
-                        },
-                        "category": {
-                            "name": "Category",
-                            "type": "string",
-                            "value": "Cloud icons"
-                        }
-                    }
-                }
-            ],
-            "attr": {
-                "description": {
-                    "name": "Description",
-                    "type": "string",
-                    "value": "An abstraction of a component that holds state"
-                },
-                "category": {
-                    "name": "Category",
-                    "type": "string",
-                    "value": "Cloud icons"
-                }
-            }
-        },
-        {
             "id": "MongoDB",
             "type": "Node",
             "nodeName": "MongoDB",
@@ -561,6 +281,520 @@
             }
         },
         {
+            "id": "STATELESS_COMPONENT",
+            "type": "Node",
+            "nodeName": "Stateless Component",
+            "img": "../pattern_icons/stateless_component.png",
+            "children": [
+                {
+                    "id": "PROCESSING_COMPONENT",
+                    "type": "Node",
+                    "nodeName": "Processing Component",
+                    "img": "../pattern_icons/processing_component.png",
+                    "children": [
+                        {
+                            "id": "SPRING_FRAMEWORK",
+                            "type": "Node",
+                            "nodeName": "Spring Boot Service",
+                            "img": "icons/SPRING_FRAMEWORK.png",
+                            "children": [],
+                            "attr": {
+                                "description": {
+                                    "name": "Description",
+                                    "type": "string",
+                                    "value": "A Microservice build with Spring"
+                                },
+                                "category": {
+                                    "name": "Category",
+                                    "type": "string",
+                                    "value": "Cloud Components"
+                                },
+                                "scalable": {
+                                    "name": "Scalable",
+                                    "type": "boolean",
+                                    "value": true
+                                },
+                                "maxscalable": {
+                                    "name": "Max. Instances",
+                                    "type": "integer",
+                                    "value": 20
+                                },
+                                "reliability": {
+                                    "name": "Reliability",
+                                    "type": "number",
+                                    "value": 99.99
+                                },
+                                "costs": {
+                                    "name": "Costs",
+                                    "type": "number",
+                                    "value": 0
+                                },
+                                "costsunit": {
+                                    "name": "Cost Unit",
+                                    "type": "string",
+                                    "value": ""
+                                }
+                            }
+                        }
+                    ],
+                    "attr": {
+                        "description": {
+                            "name": "Description",
+                            "type": "string",
+                            "value": "A Component that processes data"
+                        },
+                        "category": {
+                            "name": "Category",
+                            "type": "string",
+                            "value": "Cloud Patterns"
+                        }
+                    }
+                },
+                {
+                    "id": "MESSAGE_BROKER",
+                    "type": "Node",
+                    "nodeName": "Messaging Broker",
+                    "img": "../pattern_icons/message-oriented_middleware.png",
+                    "children": [
+                        {
+                            "id": "RabbitMQ",
+                            "type": "Node",
+                            "nodeName": "RabbitMQ",
+                            "img": "icons/RabbitMQ.png",
+                            "children": [
+                                {
+                                    "id": "RabbitMQ_Shared",
+                                    "type": "Node",
+                                    "nodeName": "RabbitMQ Shared",
+                                    "img": "icons/RabbitMQ_Shared.png",
+                                    "children": [],
+                                    "attr": {
+                                        "description": {
+                                            "name": "Description",
+                                            "type": "string",
+                                            "value": "Scalable high-performance multi-protocol messaging broker."
+                                        },
+                                        "category": {
+                                            "name": "Category",
+                                            "type": "string",
+                                            "value": "SaaS"
+                                        },
+                                        "scalable": {
+                                            "name": "Scalable",
+                                            "type": "boolean",
+                                            "value": false
+                                        },
+                                        "maxscalable": {
+                                            "name": "Max. Instances",
+                                            "type": "integer",
+                                            "value": 1
+                                        },
+                                        "reliability": {
+                                            "name": "Reliability",
+                                            "type": "number",
+                                            "value": 99.73
+                                        },
+                                        "costs": {
+                                            "name": "Costs",
+                                            "type": "number",
+                                            "value": 30
+                                        },
+                                        "costsunit": {
+                                            "name": "Cost Unit",
+                                            "type": "string",
+                                            "value": "h"
+                                        }
+                                    }
+                                }
+                            ],
+                            "attr": {
+                                "description": {
+                                    "name": "Description",
+                                    "type": "string",
+                                    "value": "Scalable high-performance multi-protocol messaging broker."
+                                },
+                                "category": {
+                                    "name": "Category",
+                                    "type": "string",
+                                    "value": "SaaS"
+                                }
+                            }
+                        }
+                    ],
+                    "attr": {
+                        "description": {
+                            "name": "Description",
+                            "type": "string",
+                            "value": "A abstract message broker"
+                        },
+                        "category": {
+                            "name": "Category",
+                            "type": "string",
+                            "value": "Cloud Patterns"
+                        }
+                    }
+                }
+            ],
+            "attr": {
+                "description": {
+                    "name": "Description",
+                    "type": "string",
+                    "value": "An abstraction of a component that doesnt hold state"
+                },
+                "category": {
+                    "name": "Category",
+                    "type": "string",
+                    "value": "Cloud Patterns"
+                }
+            }
+        },
+        {
+            "id": "USER_INTERFACE_COMPONENT",
+            "type": "Node",
+            "nodeName": "Frontend",
+            "img": "../pattern_icons/user_interface_component.png",
+            "children": [
+                {
+                    "id": "ANGULAR_FRONTEND",
+                    "type": "Node",
+                    "nodeName": "Angular Frontend",
+                    "img": "icons/ANGULAR_FRONTEND.png",
+                    "children": [],
+                    "attr": {
+                        "description": {
+                            "name": "Description",
+                            "type": "string",
+                            "value": "A Frontend build with Angular 2+"
+                        },
+                        "category": {
+                            "name": "Category",
+                            "type": "string",
+                            "value": "Cloud Components"
+                        },
+                        "scalable": {
+                            "name": "Scalable",
+                            "type": "boolean",
+                            "value": false
+                        },
+                        "maxscalable": {
+                            "name": "Max. Instances",
+                            "type": "integer",
+                            "value": 1
+                        },
+                        "reliability": {
+                            "name": "Reliability",
+                            "type": "number",
+                            "value": 91.73
+                        },
+                        "costs": {
+                            "name": "Costs",
+                            "type": "number",
+                            "value": 0
+                        },
+                        "costsunit": {
+                            "name": "Cost Unit",
+                            "type": "string",
+                            "value": ""
+                        }
+                    }
+                }
+            ],
+            "attr": {
+                "description": {
+                    "name": "Description",
+                    "type": "string",
+                    "value": "A Frontend for user input"
+                },
+                "category": {
+                    "name": "Category",
+                    "type": "string",
+                    "value": "Cloud Patterns"
+                }
+            }
+        },
+        {
+            "id": "LOAD_BALANCER",
+            "type": "Node",
+            "nodeName": "Load Balancer",
+            "img": "../pattern_icons/elastic_load_balancer.png",
+            "children": [],
+            "attr": {
+                "scalable": {
+                    "name": "Scalable",
+                    "type": "boolean",
+                    "value": false
+                },
+                "maxscalable": {
+                    "name": "Max. Instances",
+                    "type": "integer",
+                    "value": 1
+                },
+                "reliability": {
+                    "name": "Reliability",
+                    "type": "number",
+                    "value": 99.6
+                },
+                "description": {
+                    "name": "Description",
+                    "type": "string",
+                    "value": "Any load balancer hosted anywhere"
+                },
+                "category": {
+                    "name": "Category",
+                    "type": "string",
+                    "value": "Cloud Patterns"
+                },
+                "costs": {
+                    "name": "Costs",
+                    "type": "number",
+                    "value": 10
+                },
+                "costsunit": {
+                    "name": "Cost Unit",
+                    "type": "string",
+                    "value": "h"
+                }
+            }
+        },
+        {
+            "id": "STATEFUL_COMPONENT",
+            "type": "Node",
+            "nodeName": "Stateful Component",
+            "img": "../pattern_icons/stateful_componentabstract_database.png",
+            "children": [
+                {
+                    "id": "DATABASE_ABSTRACT",
+                    "type": "Node",
+                    "nodeName": "Database",
+                    "img": "../pattern_icons/abstract_database.png",
+                    "children": [
+                        {
+                            "id": "BLOB_STORAGE",
+                            "type": "Node",
+                            "nodeName": "Blob Storage",
+                            "img": "../pattern_icons/blob_storage.png",
+                            "children": [
+                                {
+                                    "id": "AZURE_BLOB_STORAGE",
+                                    "type": "Node",
+                                    "nodeName": "Azure Blob Storage",
+                                    "img": "icons/AZURE_BLOB_STORAGE.png",
+                                    "children": [],
+                                    "attr": {
+                                        "description": {
+                                            "name": "Description",
+                                            "type": "string",
+                                            "value": "An Azure BLOB Storage instance"
+                                        },
+                                        "category": {
+                                            "name": "Category",
+                                            "type": "string",
+                                            "value": "PaaS"
+                                        },
+                                        "scalable": {
+                                            "name": "Scalable",
+                                            "type": "boolean",
+                                            "value": true
+                                        },
+                                        "maxscalable": {
+                                            "name": "Max. Instances",
+                                            "type": "integer",
+                                            "value": 4
+                                        },
+                                        "reliability": {
+                                            "name": "Reliability",
+                                            "type": "number",
+                                            "value": 99.76
+                                        },
+                                        "costs": {
+                                            "name": "Costs",
+                                            "type": "number",
+                                            "value": 0.0156
+                                        },
+                                        "costsunit": {
+                                            "name": "Cost Unit",
+                                            "type": "string",
+                                            "value": "h"
+                                        }
+                                    }
+                                }
+                            ],
+                            "attr": {
+                                "description": {
+                                    "name": "Description",
+                                    "type": "string",
+                                    "value": "A BLOB Storage type of a Database"
+                                },
+                                "category": {
+                                    "name": "Category",
+                                    "type": "string",
+                                    "value": "Cloud icons"
+                                }
+                            }
+                        },
+                        {
+                            "id": "RELATIONAL_DATABASE",
+                            "type": "Node",
+                            "nodeName": "Relational Database",
+                            "img": "../pattern_icons/relational_database.png",
+                            "children": [
+                                {
+                                    "id": "MYSQL",
+                                    "type": "Node",
+                                    "nodeName": "MySQL",
+                                    "img": "icons/MYSQL.png",
+                                    "children": [],
+                                    "attr": {
+                                        "description": {
+                                            "name": "Description",
+                                            "type": "string",
+                                            "value": "MySQL - a relational DB"
+                                        },
+                                        "category": {
+                                            "name": "Category",
+                                            "type": "string",
+                                            "value": "PaaS"
+                                        },
+                                        "scalable": {
+                                            "name": "Scalable",
+                                            "type": "boolean",
+                                            "value": true
+                                        },
+                                        "maxscalable": {
+                                            "name": "Max. Instances",
+                                            "type": "integer",
+                                            "value": 3
+                                        },
+                                        "reliability": {
+                                            "name": "Reliability",
+                                            "type": "number",
+                                            "value": 98.37
+                                        },
+                                        "costs": {
+                                            "name": "Costs",
+                                            "type": "number",
+                                            "value": 0
+                                        },
+                                        "costsunit": {
+                                            "name": "Cost Unit",
+                                            "type": "string",
+                                            "value": ""
+                                        }
+                                    },
+                                    "instance": {
+                                        "Germany": {
+                                            "S1": {
+                                                "reliability": {
+                                                    "name": "reliability",
+                                                    "type": "number",
+                                                    "value": 99.99
+                                                },
+                                                "cost": {
+                                                    "name": "const",
+                                                    "type": "float",
+                                                    "value": 12.12
+                                                },
+                                                "unit": {
+                                                    "name": "unit",
+                                                    "type": "string",
+                                                    "value": "hour"
+                                                },
+                                                "currency": {
+                                                    "name": "currency",
+                                                    "type": "string",
+                                                    "value": "euro"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "id": "MARIADB",
+                                    "type": "Node",
+                                    "nodeName": "MariaDB",
+                                    "img": "icons/MARIADB.png",
+                                    "children": [],
+                                    "attr": {
+                                        "description": {
+                                            "name": "Description",
+                                            "type": "string",
+                                            "value": "Fork of Mysql"
+                                        },
+                                        "category": {
+                                            "name": "Category",
+                                            "type": "string",
+                                            "value": "PaaS"
+                                        },
+                                        "scalable": {
+                                            "name": "Scalable",
+                                            "type": "boolean",
+                                            "value": true
+                                        },
+                                        "maxscalable": {
+                                            "name": "Max. Instances",
+                                            "type": "integer",
+                                            "value": 3
+                                        },
+                                        "reliability": {
+                                            "name": "Reliability",
+                                            "type": "number",
+                                            "value": 97.3
+                                        },
+                                        "costs": {
+                                            "name": "Costs",
+                                            "type": "number",
+                                            "value": 0
+                                        },
+                                        "costsunit": {
+                                            "name": "Cost Unit",
+                                            "type": "string",
+                                            "value": ""
+                                        }
+                                    }
+                                }
+                            ],
+                            "attr": {
+                                "description": {
+                                    "name": "Description",
+                                    "type": "string",
+                                    "value": "A relational DB like MySQL"
+                                },
+                                "category": {
+                                    "name": "Category",
+                                    "type": "string",
+                                    "value": "Cloud icons"
+                                }
+                            }
+                        }
+                    ],
+                    "attr": {
+                        "description": {
+                            "name": "Description",
+                            "type": "string",
+                            "value": "An abstract representation of a Database"
+                        },
+                        "category": {
+                            "name": "Category",
+                            "type": "string",
+                            "value": "Cloud icons"
+                        }
+                    }
+                }
+            ],
+            "attr": {
+                "description": {
+                    "name": "Description",
+                    "type": "string",
+                    "value": "An abstraction of a component that holds state"
+                },
+                "category": {
+                    "name": "Category",
+                    "type": "string",
+                    "value": "Cloud icons"
+                }
+            }
+        },
+        {
             "id": "Elastic_Runtime",
             "type": "Node",
             "nodeName": "Elastic Runtime",
@@ -713,244 +947,22 @@
             }
         },
         {
-            "id": "STATELESS_COMPONENT",
+            "id": "ACTOR_DEFAULT",
             "type": "Node",
-            "nodeName": "Stateless Component",
-            "img": "icons/STATELESS_COMPONENT.png",
-            "children": [
-                {
-                    "id": "PROCESSING_COMPONENT",
-                    "type": "Node",
-                    "nodeName": "Processing Component",
-                    "img": "icons/PROCESSING_COMPONENT.png",
-                    "children": [
-                        {
-                            "id": "SPRING_FRAMEWORK",
-                            "type": "Node",
-                            "nodeName": "Spring Boot Service",
-                            "img": "icons/SPRING_FRAMEWORK.png",
-                            "children": [],
-                            "attr": {
-                                "description": {
-                                    "name": "Description",
-                                    "type": "string",
-                                    "value": "A Microservice build with Spring"
-                                },
-                                "category": {
-                                    "name": "Category",
-                                    "type": "string",
-                                    "value": "Cloud Components"
-                                },
-                                "scalable": {
-                                    "name": "Scalable",
-                                    "type": "boolean",
-                                    "value": true
-                                },
-                                "maxscalable": {
-                                    "name": "Max. Instances",
-                                    "type": "integer",
-                                    "value": 20
-                                },
-                                "reliability": {
-                                    "name": "Reliability",
-                                    "type": "number",
-                                    "value": 99.99
-                                },
-                                "costs": {
-                                    "name": "Costs",
-                                    "type": "number",
-                                    "value": 0
-                                },
-                                "costsunit": {
-                                    "name": "Cost Unit",
-                                    "type": "string",
-                                    "value": ""
-                                }
-                            }
-                        }
-                    ],
-                    "attr": {
-                        "description": {
-                            "name": "Description",
-                            "type": "string",
-                            "value": "A Component that processes data"
-                        },
-                        "category": {
-                            "name": "Category",
-                            "type": "string",
-                            "value": "Cloud Patterns"
-                        }
-                    }
-                },
-                {
-                    "id": "MESSAGE_BROKER",
-                    "type": "Node",
-                    "nodeName": "Messaging Broker",
-                    "img": "icons/MESSAGE_BROKER.png",
-                    "children": [
-                        {
-                            "id": "RabbitMQ",
-                            "type": "Node",
-                            "nodeName": "RabbitMQ",
-                            "img": "icons/RabbitMQ.png",
-                            "children": [
-                                {
-                                    "id": "RabbitMQ_Shared",
-                                    "type": "Node",
-                                    "nodeName": "RabbitMQ Shared",
-                                    "img": "icons/RabbitMQ_Shared.png",
-                                    "children": [],
-                                    "attr": {
-                                        "description": {
-                                            "name": "Description",
-                                            "type": "string",
-                                            "value": "Scalable high-performance multi-protocol messaging broker."
-                                        },
-                                        "category": {
-                                            "name": "Category",
-                                            "type": "string",
-                                            "value": "SaaS"
-                                        },
-                                        "scalable": {
-                                            "name": "Scalable",
-                                            "type": "boolean",
-                                            "value": false
-                                        },
-                                        "maxscalable": {
-                                            "name": "Max. Instances",
-                                            "type": "integer",
-                                            "value": 1
-                                        },
-                                        "reliability": {
-                                            "name": "Reliability",
-                                            "type": "number",
-                                            "value": 99.73
-                                        },
-                                        "costs": {
-                                            "name": "Costs",
-                                            "type": "number",
-                                            "value": 30
-                                        },
-                                        "costsunit": {
-                                            "name": "Cost Unit",
-                                            "type": "string",
-                                            "value": "h"
-                                        }
-                                    }
-                                }
-                            ],
-                            "attr": {
-                                "description": {
-                                    "name": "Description",
-                                    "type": "string",
-                                    "value": "Scalable high-performance multi-protocol messaging broker."
-                                },
-                                "category": {
-                                    "name": "Category",
-                                    "type": "string",
-                                    "value": "SaaS"
-                                }
-                            }
-                        }
-                    ],
-                    "attr": {
-                        "description": {
-                            "name": "Description",
-                            "type": "string",
-                            "value": "A abstract message broker"
-                        },
-                        "category": {
-                            "name": "Category",
-                            "type": "string",
-                            "value": "Cloud Patterns"
-                        }
-                    }
-                }
-            ],
-            "attr": {
-                "description": {
-                    "name": "Description",
-                    "type": "string",
-                    "value": "An abstraction of a component that doesnt hold state"
-                },
-                "category": {
-                    "name": "Category",
-                    "type": "string",
-                    "value": "Cloud Patterns"
-                }
-            }
-        },
-        {
-            "id": "USER_INTERFACE_COMPONENT",
-            "type": "Node",
-            "nodeName": "Frontend",
-            "img": "icons/USER_INTERFACE_COMPONENT.png",
-            "children": [
-                {
-                    "id": "ANGULAR_FRONTEND",
-                    "type": "Node",
-                    "nodeName": "Angular Frontend",
-                    "img": "icons/ANGULAR_FRONTEND.png",
-                    "children": [],
-                    "attr": {
-                        "description": {
-                            "name": "Description",
-                            "type": "string",
-                            "value": "A Frontend build with Angular 2+"
-                        },
-                        "category": {
-                            "name": "Category",
-                            "type": "string",
-                            "value": "Cloud Components"
-                        },
-                        "scalable": {
-                            "name": "Scalable",
-                            "type": "boolean",
-                            "value": false
-                        },
-                        "maxscalable": {
-                            "name": "Max. Instances",
-                            "type": "integer",
-                            "value": 1
-                        },
-                        "reliability": {
-                            "name": "Reliability",
-                            "type": "number",
-                            "value": 91.73
-                        },
-                        "costs": {
-                            "name": "Costs",
-                            "type": "number",
-                            "value": 0
-                        },
-                        "costsunit": {
-                            "name": "Cost Unit",
-                            "type": "string",
-                            "value": ""
-                        }
-                    }
-                }
-            ],
-            "attr": {
-                "description": {
-                    "name": "Description",
-                    "type": "string",
-                    "value": "A Frontend for user input"
-                },
-                "category": {
-                    "name": "Category",
-                    "type": "string",
-                    "value": "Cloud Patterns"
-                }
-            }
-        },
-        {
-            "id": "LOAD_BALANCER",
-            "type": "Node",
-            "nodeName": "Load Balancer",
-            "img": "icons/LOAD_BALANCER.png",
+            "nodeName": "Default Actor",
+            "img": "icons/ACTOR_DEFAULT.png",
             "children": [],
             "attr": {
+                "reliability": {
+                    "name": "Reliability",
+                    "type": "number",
+                    "value": 100
+                },
+                "category": {
+                    "name": "Category",
+                    "type": "string",
+                    "value": "Actors"
+                },
                 "scalable": {
                     "name": "Scalable",
                     "type": "boolean",
@@ -961,30 +973,44 @@
                     "type": "integer",
                     "value": 1
                 },
-                "reliability": {
-                    "name": "Reliability",
-                    "type": "number",
-                    "value": 99.6
-                },
                 "description": {
                     "name": "Description",
                     "type": "string",
-                    "value": "Any load balancer hosted anywhere"
+                    "value": "My Chef the bottleneck"
+                }
+            }
+        },
+        {
+            "id": "ACTOR_COMPANY_XYZ",
+            "type": "Node",
+            "nodeName": "Company Xyz GmbH",
+            "img": "icons/ACTOR_COMPANY_XYZ.png",
+            "children": [],
+            "attr": {
+                "reliability": {
+                    "name": "Reliability",
+                    "type": "number",
+                    "value": 100
                 },
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "Cloud Patterns"
+                    "value": "Actors"
                 },
-                "costs": {
-                    "name": "Costs",
-                    "type": "number",
-                    "value": 10
+                "scalable": {
+                    "name": "Scalable",
+                    "type": "boolean",
+                    "value": false
                 },
-                "costsunit": {
-                    "name": "Cost Unit",
+                "maxscalable": {
+                    "name": "Max. Instances",
+                    "type": "integer",
+                    "value": 1
+                },
+                "description": {
+                    "name": "Description",
                     "type": "string",
-                    "value": "h"
+                    "value": "The company xyz delivers the data."
                 }
             }
         }
@@ -1036,7 +1062,7 @@
             "id": "THREE_TIER_PATTERN",
             "name": "Three-Tier-Pattern",
             "type": "Template",
-            "img": "icons/THREE_TIER_PATTERN.png",
+            "img": "../pattern_icons/three-tier_cloud_application.png",
             "components": [
                 {
                     "id": "USER_INTERFACE_COMPONENT",
@@ -1059,7 +1085,7 @@
             "id": "TWO_TIER_PATTERN",
             "name": "Two-Tier-Pattern",
             "type": "Template",
-            "img": "icons/TWO_TIER_PATTERN.png",
+            "img": "../pattern_icons/two-tier_cloud_application.png",
             "components": [
                 {
                     "id": "PROCESSING_COMPONENT",
@@ -1077,7 +1103,7 @@
             "id": "VM_AS_A_SERVICE",
             "name": "VM as a Service",
             "type": "Template",
-            "img": "icons/VM_AS_A_SERVICE.png",
+            "img": "../pattern_icons/infrastructure_as_a_service.png",
             "components": [
                 {
                     "id": "Load_Balancer_for_VMs",

@@ -1,0 +1,66 @@
+[
+    {
+        "id": "THREE_TIER_PATTERN",
+        "name": "Three-Tier-Pattern",
+        "type": "Template",
+        "img": "../pattern_icons/three-tier_cloud_application.png",
+        "components": [
+            {
+                "id": "USER_INTERFACE_COMPONENT",
+                "minOccurence": 1,
+                "maxOccurence": 1
+            },
+            {
+                "id": "PROCESSING_COMPONENT",
+                "minOccurence": 1,
+                "maxOccurence": 99
+            },
+            {
+                "id": "DATABASE_ABSTRACT",
+                "minOccurence": 1,
+                "maxOccurence": 1
+            }
+        ]
+    },
+    {
+        "id": "TWO_TIER_PATTERN",
+        "name": "Two-Tier-Pattern",
+        "type": "Template",
+        "img": "../pattern_icons/two-tier_cloud_application.png",
+        "components": [
+            {
+                "id": "PROCESSING_COMPONENT",
+                "minOccurence": 1,
+                "maxOccurence": 99
+            },
+            {
+                "id": "DATABASE_ABSTRACT",
+                "minOccurence": 1,
+                "maxOccurence": 1
+            }
+        ]
+    },
+    {
+        "id": "VM_AS_A_SERVICE",
+        "name": "VM as a Service",
+        "type": "Template",
+        "img": "../pattern_icons/infrastructure_as_a_service.png",
+        "components": [
+            {
+                "id": "Load_Balancer_for_VMs",
+                "minOccurence": 1,
+                "maxOccurence": 1
+            },
+            {
+                "id": "Virtual_Machine_Jump_Host",
+                "minOccurence": 1,
+                "maxOccurence": 1
+            },
+            {
+                "id": "Virtual_Machine_Linux",
+                "minOccurence": 1,
+                "maxOccurence": 1
+            }
+        ]
+    }
+]
