@@ -13,7 +13,7 @@
                     "type": "string",
                     "const": "Node"
                 },
-                "nodeName": {
+                "name": {
                     "type": "string"
                 },
                 "img": {

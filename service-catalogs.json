@@ -1,8 +1,9 @@
 [
 	{
 		"target" : "Test",
+		"title" : "Clams Test Cloud",
 		"company" : "Clams",
-		"basePath" : "test",
+		"basePath" : "/test/",
 		"catalogFile" : "service-catalog.json",
 		"image" : "clams.png" 
 	}

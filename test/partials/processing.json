@@ -2,7 +2,7 @@
   {
     "id": "STATELESS_COMPONENT",
     "type": "Node",
-    "nodeName": "Stateless Component",
+    "name": "Stateless Component",
     "img": "../pattern_icons/stateless_component.png",
     "children": [
       "PROCESSING_COMPONENT",
@@ -24,7 +24,7 @@
   {
     "id": "PROCESSING_COMPONENT",
     "type": "Node",
-    "nodeName": "Processing Component",
+    "name": "Processing Component",
     "img": "../pattern_icons/processing_component.png",
     "children": [
       "SPRING_FRAMEWORK"
@@ -45,7 +45,7 @@
   {
     "id": "SPRING_FRAMEWORK",
     "type": "Node",
-    "nodeName": "Spring Boot Service",
+    "name": "Spring Boot Service",
     "img": "icons/SPRING_FRAMEWORK.png",
     "children": [],
     "attr": {
@@ -89,7 +89,7 @@
   {
     "id": "USER_INTERFACE_COMPONENT",
     "type": "Node",
-    "nodeName": "Frontend",
+    "name": "Frontend",
     "img": "../pattern_icons/user_interface_component.png",
     "children": [
       "ANGULAR_FRONTEND"
@@ -110,7 +110,7 @@
   {
     "id": "ANGULAR_FRONTEND",
     "type": "Node",
-    "nodeName": "Angular Frontend",
+    "name": "Angular Frontend",
     "img": "icons/ANGULAR_FRONTEND.png",
     "children": [],
     "attr": {
@@ -154,7 +154,7 @@
   {
     "id": "MESSAGE_BROKER",
     "type": "Node",
-    "nodeName": "Messaging Broker",
+    "name": "Messaging Broker",
     "img": "../pattern_icons/message-oriented_middleware.png",
     "children": [
       "RabbitMQ"
@@ -175,7 +175,7 @@
   {
     "id": "LOAD_BALANCER",
     "type": "Node",
-    "nodeName": "Load Balancer",
+    "name": "Load Balancer",
     "img": "../pattern_icons/elastic_load_balancer.png",
     "children": [],
     "attr": {

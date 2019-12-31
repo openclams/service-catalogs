@@ -2,7 +2,7 @@
   {
     "id": "Elastic_Runtime",
     "type": "Node",
-    "nodeName": "Elastic Runtime",
+    "name": "Elastic Runtime",
     "img": "icons/Elastic_Runtime.png",
     "children": [
       "Elastic_Runtime_Micro",
@@ -25,7 +25,7 @@
   {
     "id": "Elastic_Runtime_Micro",
     "type": "Node",
-    "nodeName": "Elastic Runtime Micro",
+    "name": "Elastic Runtime Micro",
     "img": "icons/Elastic_Runtime_Micro.png",
     "children": [],
     "attr": {
@@ -59,7 +59,7 @@
   {
     "id": "Elastic_Runtime_Medium",
     "type": "Node",
-    "nodeName": "Elastic Runtime Medium",
+    "name": "Elastic Runtime Medium",
     "img": "icons/Elastic_Runtime_Medium.png",
     "children": [],
     "attr": {
@@ -93,7 +93,7 @@
   {
     "id": "Elastic_Runtime_Large",
     "type": "Node",
-    "nodeName": "Elastic Runtime Large",
+    "name": "Elastic Runtime Large",
     "img": "icons/Elastic_Runtime_Large.png",
     "children": [],
     "attr": {

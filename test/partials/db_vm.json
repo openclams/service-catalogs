@@ -2,7 +2,7 @@
     {
         "id": "MongoDB",
         "type": "Node",
-        "nodeName": "MongoDB",
+        "name": "MongoDB",
         "img": "icons/MongoDB.png",
         "children": [
             "MongoDB_Free",
@@ -24,7 +24,7 @@
     {
         "id": "MongoDB_Free",
         "type": "Node",
-        "nodeName": "MongoDB Free",
+        "name": "MongoDB Free",
         "img": "icons/MongoDB_Free.png",
         "children": [],
         "attr": {
@@ -58,7 +58,7 @@
     {
         "id": "MongoDB_Shared",
         "type": "Node",
-        "nodeName": "MongoDB Shared",
+        "name": "MongoDB Shared",
         "img": "icons/MongoDB_Shared.png",
         "children": [],
         "attr": {
@@ -92,7 +92,7 @@
     {
         "id": "Virtual_Machine_Linux",
         "type": "Node",
-        "nodeName": "Virtual Machine Linux",
+        "name": "Virtual Machine Linux",
         "img": "icons/Virtual_Machine_Linux.png",
         "children": [
             "Virtual_Machine_Linux_Micro",
@@ -115,7 +115,7 @@
     {
         "id": "Virtual_Machine_Linux_Micro",
         "type": "Node",
-        "nodeName": "Virtual Machine Linux Micro",
+        "name": "Virtual Machine Linux Micro",
         "img": "icons/Virtual_Machine_Linux_Micro.png",
         "children": [
             
@@ -151,7 +151,7 @@
     {
         "id": "Virtual_Machine_Linux_Large",
         "type": "Node",
-        "nodeName": "Virtual Machine Linux Large",
+        "name": "Virtual Machine Linux Large",
         "img": "icons/Virtual_Machine_Linux_Large.png",
         "children": [],
         "attr": {
@@ -185,7 +185,7 @@
     {
         "id": "Virtual_Machine_Jump_Host",
         "type": "Node",
-        "nodeName": "Virtual Machine Jump Host",
+        "name": "Virtual Machine Jump Host",
         "img": "icons/Virtual_Machine_Jump_Host.png",
         "children": [
             "Virtual_Machine_Jump_Host_Linux_SSH"
@@ -206,7 +206,7 @@
     {
         "id": "Virtual_Machine_Jump_Host_Linux_SSH",
         "type": "Node",
-        "nodeName": "Virtual Machine Jump Host Linux SSH",
+        "name": "Virtual Machine Jump Host Linux SSH",
         "img": "icons/Virtual_Machine_Jump_Host_Linux_SSH.png",
         "children": [],
         "attr": {
