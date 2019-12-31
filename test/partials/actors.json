@@ -2,7 +2,7 @@
     {
         "id": "ACTOR_DEFAULT",
         "type": "Node",
-        "nodeName": "Default Actor",
+        "name": "Default Actor",
         "img": "icons/ACTOR_DEFAULT.png",
         "children": [],
         "attr": {
@@ -36,7 +36,7 @@
     {
         "id": "ACTOR_COMPANY_XYZ",
         "type": "Node",
-        "nodeName": "Company Xyz GmbH",
+        "name": "Company Xyz GmbH",
         "img": "icons/ACTOR_COMPANY_XYZ.png",
         "children": [],
         "attr": {

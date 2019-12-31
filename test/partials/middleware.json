@@ -2,7 +2,7 @@
     {
         "id": "RabbitMQ",
         "type": "Node",
-        "nodeName": "RabbitMQ",
+        "name": "RabbitMQ",
         "img": "icons/RabbitMQ.png",
         "children": [
             "RabbitMQ_Shared"
@@ -23,7 +23,7 @@
     {
         "id": "RabbitMQ_Shared",
         "type": "Node",
-        "nodeName": "RabbitMQ Shared",
+        "name": "RabbitMQ Shared",
         "img": "icons/RabbitMQ_Shared.png",
         "children": [],
         "attr": {
