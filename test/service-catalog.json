@@ -72,7 +72,7 @@
             "id": "STATEFUL_COMPONENT",
             "type": "Node",
             "name": "Stateful Component",
-            "img": "../pattern_icons/stateful_componentabstract_database.png",
+            "img": "../pattern_icons/stateful_component.png",
             "children": [
                 "DATABASE_ABSTRACT"
             ],
