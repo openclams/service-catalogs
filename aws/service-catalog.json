@@ -348,9 +348,7 @@
             "type": "Node",
             "name": "Frontend",
             "img": "../pattern_icons/user_interface_component.png",
-            "children": [
-                "ANGULAR_FRONTEND"
-            ],
+            "children": [],
             "attr": {
                 "description": {
                     "name": "Description",
@@ -364,11 +362,11 @@
                 }
             }
         },
-        "ANGULAR_FRONTEND": {
-            "id": "ANGULAR_FRONTEND",
+        "Amazon ECS": {
+            "id": "Amazon ECS",
             "type": "Node",
-            "name": "Angular Frontend",
-            "img": "icons/ANGULAR_FRONTEND.png",
+            "name": "Amazon ECS",
+            "img": "icons/ecs.png",
             "children": [],
             "attr": {
                 "scalable": {
@@ -394,7 +392,7 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "Cloud Components"
+                    "value": "AWS Processing"
                 },
                 "costs": {
                     "name": "Costs",
@@ -405,11 +403,74 @@
                     "name": "Cost Unit",
                     "type": "string",
                     "value": ""
-                }
-            },
-            "parents": [
-                "USER_INTERFACE_COMPONENT"
-            ]
+                },
+                "regions": [
+                    {
+                        "id": "us-east-2",
+                        "name": "US East (Ohio)"
+                    },
+                    {
+                        "id": "us-east-1",
+                        "name": "US East (N. Virginia)"
+                    },
+                    {
+                        "id": "us-west-1",
+                        "name": "US West (N. California)"
+                    },
+                    {
+                        "id": "us-west-2",
+                        "name": "USA West (Oregon)"
+                    },
+                    {
+                        "id": "ap-east-1",
+                        "name": "Asien-Pazifik (Hongkong)"
+                    },
+                    {
+                        "id": "ap-south-1",
+                        "name": "Asia-pacific (Mumbai)"
+                    },
+                    {
+                        "id": "ap-northeast-3",
+                        "name": "Asien-Pazifik (Osaka-Lokal)"
+                    },
+                    {
+                        "id": "ap-northeast-1",
+                        "name": "Asien-Pazifik (Sydney)"
+                    },
+                    {
+                        "id": "ca-central-1",
+                        "name": "Kanada (Central)"
+                    },
+                    {
+                        "id": "eu-central-1",
+                        "name": "EU (Frankfurt)"
+                    },
+                    {
+                        "id": "eu-west-1",
+                        "name": "EU (Ireland)"
+                    },
+                    {
+                        "id": "eu-west-2",
+                        "name": "EU (London)"
+                    },
+                    {
+                        "id": "eu-west-3",
+                        "name": "EU (Paris)"
+                    },
+                    {
+                        "id": "eu-north-1",
+                        "name": "EU (Stockholm)"
+                    },
+                    {
+                        "id": "me-south-1",
+                        "name": "Naher Osten (Bahrain)"
+                    },
+                    {
+                        "id": "sa-east-1",
+                        "name": "S\u00fcdamerika (Sao Paulo)"
+                    }
+                ]
+            }
         },
         "MESSAGE_BROKER": {
             "id": "MESSAGE_BROKER",
@@ -428,18 +489,18 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "Cloud Patterns"
+                    "value": "Template"
                 }
             },
             "parents": [
                 "STATELESS_COMPONENT"
             ]
         },
-        "LOAD_BALANCER": {
-            "id": "LOAD_BALANCER",
+        "Amazon EC2": {
+            "id": "Amazon EC2",
             "type": "Node",
-            "name": "Load Balancer",
-            "img": "../pattern_icons/elastic_load_balancer.png",
+            "name": "Amazon EC2",
+            "img": "icons/ec2.png",
             "children": [],
             "attr": {
                 "scalable": {
@@ -455,7 +516,7 @@
                 "reliability": {
                     "name": "Reliability",
                     "type": "number",
-                    "value": 99.6
+                    "value": 99.99
                 },
                 "description": {
                     "name": "Description",
@@ -465,7 +526,7 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "Cloud Patterns"
+                    "value": "AWS Processing"
                 },
                 "costs": {
                     "name": "Costs",
@@ -476,7 +537,293 @@
                     "name": "Cost Unit",
                     "type": "string",
                     "value": "h"
-                }
+                },
+                "regions": [
+                    {
+                        "id": "us-east-2",
+                        "name": "US East (Ohio)"
+                    },
+                    {
+                        "id": "us-east-1",
+                        "name": "US East (N. Virginia)"
+                    },
+                    {
+                        "id": "us-west-1",
+                        "name": "US West (N. California)"
+                    },
+                    {
+                        "id": "us-west-2",
+                        "name": "USA West (Oregon)"
+                    },
+                    {
+                        "id": "ap-east-1",
+                        "name": "Asien-Pazifik (Hongkong)"
+                    },
+                    {
+                        "id": "ap-south-1",
+                        "name": "Asia-pacific (Mumbai)"
+                    },
+                    {
+                        "id": "ap-northeast-3",
+                        "name": "Asien-Pazifik (Osaka-Lokal)"
+                    },
+                    {
+                        "id": "ap-northeast-1",
+                        "name": "Asien-Pazifik (Sydney)"
+                    },
+                    {
+                        "id": "ca-central-1",
+                        "name": "Kanada (Central)"
+                    },
+                    {
+                        "id": "eu-central-1",
+                        "name": "EU (Frankfurt)"
+                    },
+                    {
+                        "id": "eu-west-1",
+                        "name": "EU (Ireland)"
+                    },
+                    {
+                        "id": "eu-west-2",
+                        "name": "EU (London)"
+                    },
+                    {
+                        "id": "eu-west-3",
+                        "name": "EU (Paris)"
+                    },
+                    {
+                        "id": "eu-north-1",
+                        "name": "EU (Stockholm)"
+                    },
+                    {
+                        "id": "me-south-1",
+                        "name": "Naher Osten (Bahrain)"
+                    },
+                    {
+                        "id": "sa-east-1",
+                        "name": "S\u00fcdamerika (Sao Paulo)"
+                    }
+                ]
+            }
+        },
+        "Amazon Lambda": {
+            "id": "Amazon Lambda",
+            "type": "Node",
+            "name": "Amazon Lambda",
+            "img": "icons/lambda.png",
+            "children": [],
+            "attr": {
+                "scalable": {
+                    "name": "Scalable",
+                    "type": "boolean",
+                    "value": false
+                },
+                "maxscalable": {
+                    "name": "Max. Instances",
+                    "type": "integer",
+                    "value": 1
+                },
+                "reliability": {
+                    "name": "Reliability",
+                    "type": "number",
+                    "value": 99.99
+                },
+                "description": {
+                    "name": "Description",
+                    "type": "string",
+                    "value": "Any load balancer hosted anywhere"
+                },
+                "category": {
+                    "name": "Category",
+                    "type": "string",
+                    "value": "AWS Processing"
+                },
+                "costs": {
+                    "name": "Costs",
+                    "type": "number",
+                    "value": 10
+                },
+                "costsunit": {
+                    "name": "Cost Unit",
+                    "type": "string",
+                    "value": "h"
+                },
+                "regions": [
+                    {
+                        "id": "us-east-2",
+                        "name": "US East (Ohio)"
+                    },
+                    {
+                        "id": "us-east-1",
+                        "name": "US East (N. Virginia)"
+                    },
+                    {
+                        "id": "us-west-1",
+                        "name": "US West (N. California)"
+                    },
+                    {
+                        "id": "us-west-2",
+                        "name": "USA West (Oregon)"
+                    },
+                    {
+                        "id": "ap-east-1",
+                        "name": "Asien-Pazifik (Hongkong)"
+                    },
+                    {
+                        "id": "ap-south-1",
+                        "name": "Asia-pacific (Mumbai)"
+                    },
+                    {
+                        "id": "ap-northeast-3",
+                        "name": "Asien-Pazifik (Osaka-Lokal)"
+                    },
+                    {
+                        "id": "ap-northeast-1",
+                        "name": "Asien-Pazifik (Sydney)"
+                    },
+                    {
+                        "id": "ca-central-1",
+                        "name": "Kanada (Central)"
+                    },
+                    {
+                        "id": "eu-central-1",
+                        "name": "EU (Frankfurt)"
+                    },
+                    {
+                        "id": "eu-west-1",
+                        "name": "EU (Ireland)"
+                    },
+                    {
+                        "id": "eu-west-2",
+                        "name": "EU (London)"
+                    },
+                    {
+                        "id": "eu-west-3",
+                        "name": "EU (Paris)"
+                    },
+                    {
+                        "id": "eu-north-1",
+                        "name": "EU (Stockholm)"
+                    },
+                    {
+                        "id": "me-south-1",
+                        "name": "Naher Osten (Bahrain)"
+                    },
+                    {
+                        "id": "sa-east-1",
+                        "name": "S\u00fcdamerika (Sao Paulo)"
+                    }
+                ]
+            }
+        },
+        "Amazon Beanstalk": {
+            "id": "Amazon Beanstalk",
+            "type": "Node",
+            "name": "Amazon Beanstalk",
+            "img": "icons/beanstalk.png",
+            "children": [],
+            "attr": {
+                "scalable": {
+                    "name": "Scalable",
+                    "type": "boolean",
+                    "value": false
+                },
+                "maxscalable": {
+                    "name": "Max. Instances",
+                    "type": "integer",
+                    "value": 1
+                },
+                "reliability": {
+                    "name": "Reliability",
+                    "type": "number",
+                    "value": 99.99
+                },
+                "description": {
+                    "name": "Description",
+                    "type": "string",
+                    "value": "Any load balancer hosted anywhere"
+                },
+                "category": {
+                    "name": "Category",
+                    "type": "string",
+                    "value": "AWS Processing"
+                },
+                "costs": {
+                    "name": "Costs",
+                    "type": "number",
+                    "value": 10
+                },
+                "costsunit": {
+                    "name": "Cost Unit",
+                    "type": "string",
+                    "value": "h"
+                },
+                "regions": [
+                    {
+                        "id": "us-east-2",
+                        "name": "US East (Ohio)"
+                    },
+                    {
+                        "id": "us-east-1",
+                        "name": "US East (N. Virginia)"
+                    },
+                    {
+                        "id": "us-west-1",
+                        "name": "US West (N. California)"
+                    },
+                    {
+                        "id": "us-west-2",
+                        "name": "USA West (Oregon)"
+                    },
+                    {
+                        "id": "ap-east-1",
+                        "name": "Asien-Pazifik (Hongkong)"
+                    },
+                    {
+                        "id": "ap-south-1",
+                        "name": "Asia-pacific (Mumbai)"
+                    },
+                    {
+                        "id": "ap-northeast-3",
+                        "name": "Asien-Pazifik (Osaka-Lokal)"
+                    },
+                    {
+                        "id": "ap-northeast-1",
+                        "name": "Asien-Pazifik (Sydney)"
+                    },
+                    {
+                        "id": "ca-central-1",
+                        "name": "Kanada (Central)"
+                    },
+                    {
+                        "id": "eu-central-1",
+                        "name": "EU (Frankfurt)"
+                    },
+                    {
+                        "id": "eu-west-1",
+                        "name": "EU (Ireland)"
+                    },
+                    {
+                        "id": "eu-west-2",
+                        "name": "EU (London)"
+                    },
+                    {
+                        "id": "eu-west-3",
+                        "name": "EU (Paris)"
+                    },
+                    {
+                        "id": "eu-north-1",
+                        "name": "EU (Stockholm)"
+                    },
+                    {
+                        "id": "me-south-1",
+                        "name": "Naher Osten (Bahrain)"
+                    },
+                    {
+                        "id": "sa-east-1",
+                        "name": "S\u00fcdamerika (Sao Paulo)"
+                    }
+                ]
             }
         },
         "RabbitMQ": {

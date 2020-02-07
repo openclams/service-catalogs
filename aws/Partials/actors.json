@@ -1,0 +1,70 @@
+[
+    {
+        "id": "ACTOR_DEFAULT",
+        "type": "Node",
+        "name": "Default Actor",
+        "img": "icons/ACTOR_DEFAULT.png",
+        "children": [],
+        "attr": {
+            "reliability": {
+                "name": "Reliability",
+                "type": "number",
+                "value": 100
+            },
+            "category": {
+                "name": "Category",
+                "type": "string",
+                "value": "Actors"
+            },
+            "scalable": {
+                "name": "Scalable",
+                "type": "boolean",
+                "value": false
+            },
+            "maxscalable": {
+                "name": "Max. Instances",
+                "type": "integer",
+                "value": 1
+            },
+            "description": {
+                "name": "Description",
+                "type": "string",
+                "value": "My Chef the bottleneck"
+            }
+        }
+    },
+    {
+        "id": "ACTOR_COMPANY_XYZ",
+        "type": "Node",
+        "name": "Company Xyz GmbH",
+        "img": "icons/ACTOR_COMPANY_XYZ.png",
+        "children": [],
+        "attr": {
+            "reliability": {
+                "name": "Reliability",
+                "type": "number",
+                "value": 100
+            },
+            "category": {
+                "name": "Category",
+                "type": "string",
+                "value": "Actors"
+            },
+            "scalable": {
+                "name": "Scalable",
+                "type": "boolean",
+                "value": false
+            },
+            "maxscalable": {
+                "name": "Max. Instances",
+                "type": "integer",
+                "value": 1
+            },
+            "description": {
+                "name": "Description",
+                "type": "string",
+                "value": "The company xyz delivers the data."
+            }
+        }
+    }
+]

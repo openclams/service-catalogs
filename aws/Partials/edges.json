@@ -1,0 +1,42 @@
+[
+    {
+        "id": "EDGE_SQL_DB",
+        "type": "Edge",
+        "name": "SQL SELECT Statement",
+        "allowed": [
+            {
+                "from": "PROCESSING",
+                "to": "DATABASE"
+            },
+            {
+                "from": "SOMETHING",
+                "to": "DIFFERENT"
+            }
+        ],
+        "attr": {
+            "comment": {
+                "name": "Comment",
+                "type": "string",
+                "value": "This is a generic Comment about this edge"
+            }
+        }
+    },
+    {
+        "id": "EDGE_HTTP_REQ",
+        "type": "Edge",
+        "name": "HTTP Request",
+        "exclude": [
+            {
+                "from": "DATABASE",
+                "to": "PROCESSING"
+            }
+        ],
+        "attr": {
+            "comment": {
+                "name": "Comment",
+                "type": "string",
+                "value": "This is a generic Comment about this edge"
+            }
+        }
+    }
+]

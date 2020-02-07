@@ -4,7 +4,149 @@
 		"title" : "Clams Test Cloud",
 		"company" : "Clams",
 		"basePath" : "/test/",
+		"costLookupPath" : "lookup/", 
+		"costLookupFile" : "cost-lookup.json",
 		"catalogFile" : "service-catalog.json",
-		"image" : "clams.png" 
+		"image" : "clams.png", 
+		"regions" : [
+			{
+				"id" : "any", 
+				"name" : "All of the availible regions"
+			},
+			{
+				"id" : "euro-west-fr",
+				"name" : "Europa West Frankfurt"
+			}, 
+			{
+				"id" : "euro-west-st", 
+				"name" : "Europa West Stuttgart"
+			},
+			{
+				"id" : "asia-east1",
+				"name" : "Asia-East1-Taiwan"
+			}, 
+			{
+				"id" : "asia-east2", 
+				"name" : "Asia-East2-HongKong"
+			}, 
+			{
+				"id" : "asia-south1",
+				"name" : "Asia-South1-India"
+			}, 
+			{
+				"id" : "asia-southeast1", 
+				"name" : "Asia-South1-Singapur"
+			}
+			
+		]
+	},
+	{
+		"target": "Azure", 
+		"title": "Microsoft Azure", 
+		"company": "Microsoft", 
+		"basePath": "/azure/", 
+		"costLookupPath" : "lookup/", 
+		"costLookupFile" : "cost-lookup.json",
+		"catalogFile": "service-catalog.json", 
+		"image": "microsoft-azure.png", 
+		"regions" : [
+			{
+				"id" : "any", 
+				"name": "allof the availible regions"
+			}, 
+			{
+				"id" : "centralus", 
+				"name": "Central US"
+			}, 
+			{
+				"id": "northeurope", 
+				"name": "North Europe"
+			}, 
+			{
+				"id": "westeurope", 
+				"name" : "West Europe"
+			}
+		]
+	},
+	{
+		"target": "aws", 
+		"title": "Amazon Web Services", 
+		"company": "Amazon", 
+		"basePath": "/aws/", 
+		"costLookupPath" : "lookup/", 
+		"costLookupFile" : "cost-lookup.json",
+		"catalogFile": "service-catalog.json", 
+		"image": "/cloud-type-icons/aws.png", 
+		"regions" : [
+			{
+				"id" : "any", 
+				"name": "allof the availible regions"
+			}, 
+			{
+				"id": "us-east-2", 
+				"name": "US East (Ohio)"
+			}, 
+			{
+				"id": "us-east-1", 
+				"name": "US East (N. Virginia)"
+			},
+			{
+				"id": "us-west-1", 
+				"name": "US West (N. California)"
+			},
+			{
+				"id": "us-west-2", 
+				"name": "USA West (Oregon)"
+			},
+			{
+				"id": "ap-east-1", 
+				"name": "Asien-Pazifik (Hongkong)"
+			},
+			{
+				"id": "ap-south-1", 
+				"name": "Asia-pacific (Mumbai)"
+			},
+			{
+				"id": "ap-northeast-3", 
+				"name": "Asien-Pazifik (Osaka-Lokal)"
+			},
+			{
+				"id": "ap-northeast-1", 
+				"name": "Asien-Pazifik (Sydney)"
+			},
+			{
+				"id": "ca-central-1", 
+				"name": "Kanada (Central)"
+			},
+			{
+				"id": "eu-central-1", 
+				"name": "EU (Frankfurt)"
+			},
+			{
+				"id": "eu-west-1", 
+				"name": "EU (Ireland)"
+			},
+			{
+				"id": "eu-west-2", 
+				"name": "EU (London)"
+			},
+			{
+				"id": "eu-west-3", 
+				"name": "EU (Paris)"
+			},
+			{
+				"id": "eu-north-1", 
+				"name": "EU (Stockholm)"
+			},
+			{
+				"id": "me-south-1", 
+				"name": "Naher Osten (Bahrain)"
+			}, 
+			{
+				"id": "sa-east-1", 
+				"name": "Südamerika (Sao Paulo)"
+			}
+		]
 	}
+
 ]
