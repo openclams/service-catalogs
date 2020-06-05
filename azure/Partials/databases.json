@@ -16,7 +16,7 @@
             "category": {
                 "name": "Category",
                 "type": "string",
-                "value": "Cloud icons"
+                "value": "Cloud Patterns"
             }
         }
     },
@@ -38,7 +38,7 @@
             "category": {
                 "name": "Category",
                 "type": "string",
-                "value": "Cloud icons"
+                "value": "Cloud Patterns"
             }
         }
     },
@@ -48,7 +48,7 @@
         "name": "Relational Database",
         "img": "../pattern_icons/relational_database.png",
         "children": [
-            "MYSQL",
+            "MYSQLAZURE",
             "MARIADB"
         ],
         "attr": {
@@ -60,7 +60,7 @@
             "category": {
                 "name": "Category",
                 "type": "string",
-                "value": "Cloud icons"
+                "value": "Cloud Patterns"
             }
         }
     },
@@ -81,45 +81,15 @@
             "category": {
                 "name": "Category",
                 "type": "string",
-                "value": "Cloud icons"
-            }, 
-            "regions": [
-                {
-                    "id": "any",
-                    "name": "All of the availible regions"
-                },
-                {
-                    "id": "euro-west-fr",
-                    "name": "Europa West Frankfurt"
-                },
-                {
-                    "id": "euro-west-st",
-                    "name": "Europa West Stuttgart"
-                },
-                {
-                    "id": "asia-east1",
-                    "name": "Asia-East1-Taiwan"
-                },
-                {
-                    "id": "asia-east2",
-                    "name": "Asia-East2-HongKong"
-                },
-                {
-                    "id": "asia-south1",
-                    "name": "Asia-South1-India"
-                },
-                {
-                    "id": "asia-southeast1",
-                    "name": "Asia-South1-Singapur"
-                }
-            ]
+                "value": "Cloud Patterns"
+            }
         }
     },
     {
-        "id": "MYSQL",
+        "id": "MYSQLAZURE",
         "type": "Node",
         "name": "MySQL",
-        "img": "icons/MYSQL.png",
+        "img": "icons/azure_mysql.png",
         "children": [],
         "attr": {
             "scalable": {
@@ -145,103 +115,7 @@
             "category": {
                 "name": "Category",
                 "type": "string",
-                "value": "PaaS"
-            },
-            "costs": {
-                "name":"Costs",
-                "type": "number",
-                "value": 0
-            },
-            "costsunit": {
-                "name": "Cost Unit",
-                "type": "string",
-                "value": ""
-            }, 
-            "regions": [
-                {
-                    "id" : "any", 
-                    "name" : "All of the availible regions"
-                },
-                {
-                    "id" : "euro-west-fr",
-                    "name" : "Europa West Frankfurt"
-                }, 
-                {
-                    "id" : "euro-west-st", 
-                    "name" : "Europa West Stuttgart"
-                },
-                {
-                    "id" : "asia-east1",
-                    "name" : "Asia-East1-Taiwan"
-                }, 
-                {
-                    "id" : "asia-east2", 
-                    "name" : "Asia-East2-HongKong"
-                }, 
-                {
-                    "id" : "asia-south1",
-                    "name" : "Asia-South1-India"
-                }, 
-                {
-                    "id" : "asia-southeast1", 
-                    "name" : "Asia-South1-Singapur"
-                }
-            ]
-        },
-        "instance": {
-            "Germany": {
-                "S1": {
-                    "reliability": {
-                        "name": "reliability",
-                        "type": "number",
-                        "value": 99.99
-                    },
-                    "cost": {
-                        "name": "const",
-                        "type": "float",
-                        "value": 12.12
-                    },
-                    "unit":{
-                        "name": "unit",
-                        "type": "string",
-                        "value": "hour"
-                    },
-                    "currency":{
-                        "name": "currency",
-                        "type": "string",
-                        "value": "euro"
-                    },
-                    "regions": [
-                        {
-                            "id" : "any", 
-                            "name" : "All of the availible regions"
-                        },
-                        {
-                            "id" : "euro-west-fr",
-                            "name" : "Europa West Frankfurt"
-                        }, 
-                        {
-                            "id" : "euro-west-st", 
-                            "name" : "Europa West Stuttgart"
-                        },
-                        {
-                            "id" : "asia-east1",
-                            "name" : "Asia-East1-Taiwan"
-                        }, 
-                        {
-                            "id" : "asia-east2", 
-                            "name" : "Asia-East2-HongKong"
-                        }, 
-                        {
-                            "id" : "asia-south1",
-                            "name" : "Asia-South1-India"
-                        }, 
-                        {
-                            "id" : "asia-southeast1", 
-                            "name" : "Asia-South1-Singapur"
-                        }
-                    ]
-                }
+                "value": "Azure Databases"
             }
         }
     },
@@ -286,37 +160,7 @@
                 "name": "Cost Unit",
                 "type": "string",
                 "value": ""
-            },
-            "regions": [
-                {
-                    "id" : "any", 
-                    "name" : "All of the availible regions"
-                },
-                {
-                    "id" : "euro-west-fr",
-                    "name" : "Europa West Frankfurt"
-                }, 
-                {
-                    "id" : "euro-west-st", 
-                    "name" : "Europa West Stuttgart"
-                },
-                {
-                    "id" : "asia-east1",
-                    "name" : "Asia-East1-Taiwan"
-                }, 
-                {
-                    "id" : "asia-east2", 
-                    "name" : "Asia-East2-HongKong"
-                }, 
-                {
-                    "id" : "asia-south1",
-                    "name" : "Asia-South1-India"
-                }, 
-                {
-                    "id" : "asia-southeast1", 
-                    "name" : "Asia-South1-Singapur"
-                }
-            ]
+            }
         }
     },
     {
@@ -349,7 +193,7 @@
             "category": {
                 "name": "Category",
                 "type": "string",
-                "value": "PaaS"
+                "value": "Azure Database"
             },
             "costs": {
                 "name":"Costs",

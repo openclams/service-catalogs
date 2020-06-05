@@ -2,12 +2,12 @@
     
     "costTable": [
     {
-        "id": "Amazon EC2", 
+        "id": "tr.large", 
         "regions": [
             {
                 "id": "us-east-2", 
                 "type" : "number", 
-                "value": "1.55"
+                "value": "2.55"
               }, 
               {
                 "id": "us-east-1", 
@@ -22,27 +22,7 @@
               {
                 "id": "us-west-2", 
                 "type" : "number", 
-                "value": "1.43"
-              },
-              {
-                "id": "ap-east-1", 
-                "type" : "number", 
-                "value": "1.01"
-              },
-              {
-                "id": "ap-south-1", 
-                "type" : "number", 
-                "value": "2.00"
-              },
-              {
-                "id": "ap-northeast-3", 
-                "type" : "number", 
-                "value": "1.22"
-              },
-              {
-                "id": "ap-northeast-1", 
-                "type" : "number", 
-                "value": "1.03"
+                "value": "0.2656"
               },
               {
                 "id": "ca-central-1", 
@@ -52,125 +32,61 @@
               {
                 "id": "eu-central-1", 
                 "type" : "number", 
-                "value": "1.43"
+                "value": "0.2656"
               },
               {
                 "id": "eu-west-1", 
                 "type" : "number", 
-                "value": "1.54"
+                "value": "0.512"
               },
               {
                 "id": "eu-west-2", 
                 "type" : "number", 
-                "value": "1.67"
+                "value": "0.2624"
               },
               {
                 "id": "eu-west-3", 
                 "type" : "number", 
-                "value": "1.88"
+                "value": "0.2624"
               },
               {
                 "id": "eu-north-1", 
                 "type" : "number", 
-                "value": "1.77"
-              },
-              {
-                "id": "me-south-1", 
-                "type" : "number", 
-                "value": "1.01"
-              }, 
-              {
-                "id": "sa-east-1", 
-                "type" : "number", 
-                "value": "1.00"
-              }
-        ]
-    }, 
-    {
-        "id": "Amazon ECS", 
-        "regions" : [
-            {
-                "id": "us-east-2", 
-                "type" : "number", 
-                "value": "1.55"
-              }, 
-              {
-                "id": "us-east-1", 
-                "type" : "number", 
-                "value": "1.67"
-              },
-              {
-                "id": "us-west-1", 
-                "type" : "number", 
-                "value": "1.66"
-              },
-              {
-                "id": "us-west-2", 
-                "type" : "number", 
-                "value": "1.43"
-              },
-              {
-                "id": "ap-east-1", 
-                "type" : "number", 
-                "value": "1.01"
-              },
-              {
-                "id": "ap-south-1", 
-                "type" : "number", 
-                "value": "2.00"
-              },
-              {
-                "id": "ap-northeast-3", 
-                "type" : "number", 
-                "value": "1.22"
-              },
-              {
-                "id": "ap-northeast-1", 
-                "type" : "number", 
-                "value": "1.03"
-              },
-              {
-                "id": "ca-central-1", 
-                "type" : "number", 
-                "value": "1.44"
-              },
-              {
-                "id": "eu-central-1", 
-                "type" : "number", 
-                "value": "1.43"
-              },
-              {
-                "id": "eu-west-1", 
-                "type" : "number", 
-                "value": "1.54"
-              },
-              {
-                "id": "eu-west-2", 
-                "type" : "number", 
-                "value": "1.67"
-              },
-              {
-                "id": "eu-west-3", 
-                "type" : "number", 
-                "value": "1.88"
-              },
-              {
-                "id": "eu-north-1", 
-                "type" : "number", 
-                "value": "1.77"
-              },
-              {
-                "id": "me-south-1", 
-                "type" : "number", 
-                "value": "1.01"
-              }, 
-              {
-                "id": "sa-east-1", 
-                "type" : "number", 
-                "value": "1.00"
+                "value": "0.2624"
               }
         ]
     },
+    {
+      "id": "MYSQLAWS", 
+      "regions": [
+            {
+              "id": "eu-central-1", 
+              "type" : "number", 
+              "value": "0.08138"
+            },
+            {
+              "id": "eu-west-1", 
+              "type" : "number", 
+              "value": "0.0743"
+            }, 
+            {
+              "id": "eu-west-2", 
+              "type" : "number", 
+              "value": "0.07827"
+            },
+            {
+              "id": "eu-west-3", 
+              "type" : "number", 
+              "value": "0.07827"
+            },
+            {
+              "id": "eu-north-1", 
+              "type" : "number", 
+              "value": "0.07827"
+            }
+
+      ]
+  },
     {
         "id": "Amazon Beanstalk", 
         "regions": [
@@ -262,123 +178,83 @@
             {
                 "id": "us-east-2", 
                 "type" : "number", 
-                "value": "1.55"
+                "value": "0.0358"
               }, 
               {
                 "id": "us-east-1", 
                 "type" : "number", 
-                "value": "1.67"
+                "value": "0.0358"
               },
               {
                 "id": "us-west-1", 
                 "type" : "number", 
-                "value": "1.66"
+                "value": "0.0358"
               },
               {
                 "id": "us-west-2", 
                 "type" : "number", 
-                "value": "1.43"
+                "value": "0.0358"
               },
               {
                 "id": "ap-east-1", 
                 "type" : "number", 
-                "value": "1.01"
+                "value": "0.0358"
               },
               {
                 "id": "ap-south-1", 
                 "type" : "number", 
-                "value": "2.00"
+                "value": "0.0358"
               },
               {
                 "id": "ap-northeast-3", 
                 "type" : "number", 
-                "value": "1.22"
+                "value": "0.0358"
               },
               {
                 "id": "ap-northeast-1", 
                 "type" : "number", 
-                "value": "1.03"
+                "value": "0.0358"
               },
               {
                 "id": "ca-central-1", 
                 "type" : "number", 
-                "value": "1.44"
+                "value": "0.0358"
               },
               {
                 "id": "eu-central-1", 
                 "type" : "number", 
-                "value": "1.43"
+                "value": "0.0358"
               },
               {
                 "id": "eu-west-1", 
                 "type" : "number", 
-                "value": "1.54"
+                "value": "0.0358"
               },
               {
                 "id": "eu-west-2", 
                 "type" : "number", 
-                "value": "1.67"
+                "value": "0.0358"
               },
               {
                 "id": "eu-west-3", 
                 "type" : "number", 
-                "value": "1.88"
+                "value": "0.0358"
               },
               {
                 "id": "eu-north-1", 
                 "type" : "number", 
-                "value": "1.77"
+                "value": "0.0358"
               },
               {
                 "id": "me-south-1", 
                 "type" : "number", 
-                "value": "1.01"
+                "value": "0.0358"
               }, 
               {
                 "id": "sa-east-1", 
                 "type" : "number", 
-                "value": "1.00"
+                "value": "0.0358"
               }
-        ]
-    }, 
-    {
-        "id": "mySQLtest", 
-        "regions" : [
-            {
-                "id": "eu-west-fr", 
-                "type" : "number", 
-                "value": "1.67"
-            },
-            {
-                "id": "eu-west-st", 
-                "type" : "number", 
-                "value": "1.01"
-            }, 
-            {
-                "id": "asia1", 
-                "type" : "number", 
-                "value": "1.99"
-            }
-        ]
-    },
-    {
-        "id": "mySQLtest2", 
-        "regions" : [
-            {
-                "id": "eu-west-fr", 
-                "type" : "number", 
-                "value": "1.67"
-            },
-            {
-                "id": "eu-west-st", 
-                "type" : "number", 
-                "value": "1.01"
-            }, 
-            {
-                "id": "asia1", 
-                "type" : "number", 
-                "value": "1.99"
-            }
         ]
     }
 ]

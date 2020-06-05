@@ -58,7 +58,7 @@
             },
             {
                 "id": "Virtual_Machine_Linux",
-                "minOccurence": 1,
+                "minOccurence": 1,‚
                 "maxOccurence": 1
             }
         ]

@@ -27,7 +27,7 @@
     "name": "Processing Component",
     "img": "../pattern_icons/processing_component.png",
     "children": [
-      "SPRING_FRAMEWORK"
+      "AMAZONECS"
     ],
     "attr": {
       "description": {
@@ -108,11 +108,13 @@
     }
   },
   {
-    "id": "Amazon ECS",
+    "id": "AMAZONECS",
     "type": "Node",
     "name": "Amazon ECS",
     "img": "icons/ecs.png",
-    "children": [],
+    "children": [
+      "tr.large"
+    ],
     "attr": {
       "scalable": {
         "name": "Scalable",
@@ -138,83 +140,42 @@
         "name": "Category",
         "type": "string",
         "value": "AWS Processing"
+      }
+    }
+  },
+  {
+    "id": "tr.large",
+    "type": "Node",
+    "name": "tr.large",
+    "img": "icons/t3.png",
+    "children": [
+    ],
+    "attr": {
+      "scalable": {
+        "name": "Scalable",
+        "type": "boolean",
+        "value": false
       },
-      "costs": {
-        "name": "Costs",
+      "maxscalable": {
+        "name": "Max. Instances",
+        "type": "integer",
+        "value": 1
+      },
+      "reliability": {
+        "name": "Reliability",
         "type": "number",
-        "value": 0
+        "value": 91.73
       },
-      "costsunit": {
-        "name": "Cost Unit",
+      "description": {
+        "name": "Description",
         "type": "string",
-        "value": ""
-      }, 
-      "regions" : [
-        {
-          "id": "us-east-2", 
-          "name": "US East (Ohio)"
-        }, 
-        {
-          "id": "us-east-1", 
-          "name": "US East (N. Virginia)"
-        },
-        {
-          "id": "us-west-1", 
-          "name": "US West (N. California)"
-        },
-        {
-          "id": "us-west-2", 
-          "name": "USA West (Oregon)"
-        },
-        {
-          "id": "ap-east-1", 
-          "name": "Asien-Pazifik (Hongkong)"
-        },
-        {
-          "id": "ap-south-1", 
-          "name": "Asia-pacific (Mumbai)"
-        },
-        {
-          "id": "ap-northeast-3", 
-          "name": "Asien-Pazifik (Osaka-Lokal)"
-        },
-        {
-          "id": "ap-northeast-1", 
-          "name": "Asien-Pazifik (Sydney)"
-        },
-        {
-          "id": "ca-central-1", 
-          "name": "Kanada (Central)"
-        },
-        {
-          "id": "eu-central-1", 
-          "name": "EU (Frankfurt)"
-        },
-        {
-          "id": "eu-west-1", 
-          "name": "EU (Ireland)"
-        },
-        {
-          "id": "eu-west-2", 
-          "name": "EU (London)"
-        },
-        {
-          "id": "eu-west-3", 
-          "name": "EU (Paris)"
-        },
-        {
-          "id": "eu-north-1", 
-          "name": "EU (Stockholm)"
-        },
-        {
-          "id": "me-south-1", 
-          "name": "Naher Osten (Bahrain)"
-        }, 
-        {
-          "id": "sa-east-1", 
-          "name": "Südamerika (Sao Paulo)"
-        }
-      ]
+        "value": "A virtual Machine"
+      },
+      "category": {
+        "name": "Category",
+        "type": "string",
+        "value": "AWS Processing"
+      }
     }
   },
   {

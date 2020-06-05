@@ -55,16 +55,16 @@
 				"name": "allof the availible regions"
 			}, 
 			{
-				"id" : "centralus", 
-				"name": "Central US"
+				"id" : "europe-north", 
+				"name": "Europe (North)"
 			}, 
 			{
-				"id": "northeurope", 
-				"name": "North Europe"
+				"id": "europe-west", 
+				"name": "Europe (West)"
 			}, 
 			{
-				"id": "westeurope", 
-				"name" : "West Europe"
+				"id": "france-central", 
+				"name" : "France (Central)"
 			}
 		]
 	},

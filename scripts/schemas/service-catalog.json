@@ -43,9 +43,6 @@
                                 },
                                 "unit": {
                                     "type": "string"
-                                }, 
-                                "regions": {
-                                    "type": "array"
                                 }
 
                             }

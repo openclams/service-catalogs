@@ -18,7 +18,7 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "PaaS"
+                    "value": "AWS PaaS"
                 }
             }
         },
@@ -114,7 +114,7 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "PaaS"
+                    "value": "AWS PaaS"
                 }
             }
         },
@@ -209,7 +209,7 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "PaaS"
+                    "value": "AWS PaaS"
                 }
             }
         },
@@ -268,7 +268,7 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "Cloud Patterns"
+                    "value": "AWS Cloud Patterns"
                 }
             }
         },
@@ -278,7 +278,7 @@
             "name": "Processing Component",
             "img": "../pattern_icons/processing_component.png",
             "children": [
-                "SPRING_FRAMEWORK"
+                "AMAZONECS"
             ],
             "attr": {
                 "description": {
@@ -289,58 +289,11 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "Cloud Patterns"
+                    "value": "AWS Cloud Patterns"
                 }
             },
             "parents": [
                 "STATELESS_COMPONENT"
-            ]
-        },
-        "SPRING_FRAMEWORK": {
-            "id": "SPRING_FRAMEWORK",
-            "type": "Node",
-            "name": "Spring Boot Service",
-            "img": "icons/SPRING_FRAMEWORK.png",
-            "children": [],
-            "attr": {
-                "scalable": {
-                    "name": "Scalable",
-                    "type": "boolean",
-                    "value": true
-                },
-                "maxscalable": {
-                    "name": "Max. Instances",
-                    "type": "integer",
-                    "value": 20
-                },
-                "reliability": {
-                    "name": "Reliability",
-                    "type": "number",
-                    "value": 99.99
-                },
-                "description": {
-                    "name": "Description",
-                    "type": "string",
-                    "value": "A Microservice build with Spring"
-                },
-                "category": {
-                    "name": "Category",
-                    "type": "string",
-                    "value": "Cloud Components"
-                },
-                "costs": {
-                    "name": "Costs",
-                    "type": "number",
-                    "value": 0
-                },
-                "costsunit": {
-                    "name": "Cost Unit",
-                    "type": "string",
-                    "value": ""
-                }
-            },
-            "parents": [
-                "PROCESSING_COMPONENT"
             ]
         },
         "USER_INTERFACE_COMPONENT": {
@@ -358,16 +311,18 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "Cloud Patterns"
+                    "value": "AWS Cloud Patterns"
                 }
             }
         },
-        "Amazon ECS": {
-            "id": "Amazon ECS",
+        "AMAZONECS": {
+            "id": "AMAZONECS",
             "type": "Node",
             "name": "Amazon ECS",
             "img": "icons/ecs.png",
-            "children": [],
+            "children": [
+                "tr.large"
+            ],
             "attr": {
                 "scalable": {
                     "name": "Scalable",
@@ -393,84 +348,48 @@
                     "name": "Category",
                     "type": "string",
                     "value": "AWS Processing"
+                }
+            },
+            "parents": [
+                "PROCESSING_COMPONENT"
+            ]
+        },
+        "tr.large": {
+            "id": "tr.large",
+            "type": "Node",
+            "name": "tr.large",
+            "img": "icons/t3.png",
+            "children": [],
+            "attr": {
+                "scalable": {
+                    "name": "Scalable",
+                    "type": "boolean",
+                    "value": false
                 },
-                "costs": {
-                    "name": "Costs",
+                "maxscalable": {
+                    "name": "Max. Instances",
+                    "type": "integer",
+                    "value": 1
+                },
+                "reliability": {
+                    "name": "Reliability",
                     "type": "number",
-                    "value": 0
+                    "value": 91.73
                 },
-                "costsunit": {
-                    "name": "Cost Unit",
+                "description": {
+                    "name": "Description",
                     "type": "string",
-                    "value": ""
+                    "value": "A virtual Machine"
                 },
-                "regions": [
-                    {
-                        "id": "us-east-2",
-                        "name": "US East (Ohio)"
-                    },
-                    {
-                        "id": "us-east-1",
-                        "name": "US East (N. Virginia)"
-                    },
-                    {
-                        "id": "us-west-1",
-                        "name": "US West (N. California)"
-                    },
-                    {
-                        "id": "us-west-2",
-                        "name": "USA West (Oregon)"
-                    },
-                    {
-                        "id": "ap-east-1",
-                        "name": "Asien-Pazifik (Hongkong)"
-                    },
-                    {
-                        "id": "ap-south-1",
-                        "name": "Asia-pacific (Mumbai)"
-                    },
-                    {
-                        "id": "ap-northeast-3",
-                        "name": "Asien-Pazifik (Osaka-Lokal)"
-                    },
-                    {
-                        "id": "ap-northeast-1",
-                        "name": "Asien-Pazifik (Sydney)"
-                    },
-                    {
-                        "id": "ca-central-1",
-                        "name": "Kanada (Central)"
-                    },
-                    {
-                        "id": "eu-central-1",
-                        "name": "EU (Frankfurt)"
-                    },
-                    {
-                        "id": "eu-west-1",
-                        "name": "EU (Ireland)"
-                    },
-                    {
-                        "id": "eu-west-2",
-                        "name": "EU (London)"
-                    },
-                    {
-                        "id": "eu-west-3",
-                        "name": "EU (Paris)"
-                    },
-                    {
-                        "id": "eu-north-1",
-                        "name": "EU (Stockholm)"
-                    },
-                    {
-                        "id": "me-south-1",
-                        "name": "Naher Osten (Bahrain)"
-                    },
-                    {
-                        "id": "sa-east-1",
-                        "name": "S\u00fcdamerika (Sao Paulo)"
-                    }
-                ]
-            }
+                "category": {
+                    "name": "Category",
+                    "type": "string",
+                    "value": "AWS Processing"
+                }
+            },
+            "parents": [
+                "AMAZONECS"
+            ]
         },
         "MESSAGE_BROKER": {
             "id": "MESSAGE_BROKER",
@@ -478,7 +397,6 @@
             "name": "Messaging Broker",
             "img": "../pattern_icons/message-oriented_middleware.png",
             "children": [
-                "RabbitMQ"
             ],
             "attr": {
                 "description": {
@@ -489,7 +407,7 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "Template"
+                    "value": "AWS Cloud Patterns"
                 }
             },
             "parents": [
@@ -826,67 +744,6 @@
                 ]
             }
         },
-        "RabbitMQ": {
-            "id": "RabbitMQ",
-            "type": "Node",
-            "name": "RabbitMQ",
-            "img": "icons/RabbitMQ.png",
-            "children": [
-                "RabbitMQ_Shared"
-            ],
-            "attr": {
-                "description": {
-                    "name": "Description",
-                    "type": "string",
-                    "value": "Scalable high-performance multi-protocol messaging broker."
-                },
-                "category": {
-                    "name": "Category",
-                    "type": "string",
-                    "value": "SaaS"
-                }
-            },
-            "parents": [
-                "MESSAGE_BROKER"
-            ]
-        },
-        "RabbitMQ_Shared": {
-            "id": "RabbitMQ_Shared",
-            "type": "Node",
-            "name": "RabbitMQ Shared",
-            "img": "icons/RabbitMQ_Shared.png",
-            "children": [],
-            "attr": {
-                "scalable": {
-                    "name": "Scalable",
-                    "type": "boolean",
-                    "value": false
-                },
-                "maxscalable": {
-                    "name": "Max. Instances",
-                    "type": "integer",
-                    "value": 1
-                },
-                "reliability": {
-                    "name": "Reliability",
-                    "type": "number",
-                    "value": 99.73
-                },
-                "costs": {
-                    "name": "Costs",
-                    "type": "number",
-                    "value": 30
-                },
-                "costsunit": {
-                    "name": "Cost Unit",
-                    "type": "string",
-                    "value": "h"
-                }
-            },
-            "parents": [
-                "RabbitMQ"
-            ]
-        },
         "STATEFUL_COMPONENT": {
             "id": "STATEFUL_COMPONENT",
             "type": "Node",
@@ -904,7 +761,7 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "Cloud icons"
+                    "value": "AWS Cloud Patterns"
                 }
             }
         },
@@ -926,7 +783,7 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "Cloud icons"
+                    "value": "AWS Cloud Patterns"
                 }
             },
             "parents": [
@@ -940,7 +797,8 @@
             "img": "../pattern_icons/relational_database.png",
             "children": [
                 "MYSQL",
-                "MARIADB"
+                "MARIADB",
+                "MYSQLAWS"
             ],
             "attr": {
                 "description": {
@@ -951,7 +809,7 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "Cloud icons"
+                    "value": "AWS Cloud Patterns"
                 }
             },
             "parents": [
@@ -975,7 +833,7 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "Cloud icons"
+                    "value": "AWS Cloud Patterns"
                 },
                 "regions": [
                     {
@@ -1042,7 +900,7 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "PaaS"
+                    "value": "AWS PaaS"
                 },
                 "costs": {
                     "name": "Costs",
@@ -1145,6 +1003,87 @@
                 "RELATIONAL_DATABASE"
             ]
         },
+        "RDSAWS": {
+            "id": "RDSAWS",
+            "type": "Node",
+            "name": "AWS MySQL",
+            "img": "icons/aws_rds.png",
+            "children": ["MYSQLAWS"],
+            "attr": {
+                "scalable": {
+                    "name": "Scalable",
+                    "type": "boolean",
+                    "value": true
+                },
+                "reliability": {
+                    "name": "Reliability",
+                    "type": "number",
+                    "value": 98.37
+                },
+                "description": {
+                    "name": "Description",
+                    "type": "string",
+                    "value": "MySQL - a relational DB"
+                },
+                "category": {
+                    "name": "Category",
+                    "type": "string",
+                    "value": "AWS DB"
+                },
+                "costsunit": {
+                    "name": "Cost Unit",
+                    "type": "string",
+                    "value": ""
+                }
+            }
+        },
+        "MYSQLAWS": {
+            "id": "MYSQLAWS",
+            "type": "Node",
+            "name": "MYSQLAWS",
+            "img": "icons/aws_mysql.png",
+            "children": [],
+            "attr": {
+                "scalable": {
+                    "name": "Scalable",
+                    "type": "boolean",
+                    "value": true
+                },
+                "maxscalable": {
+                    "name": "Max. Instances",
+                    "type": "integer",
+                    "value": 3
+                },
+                "reliability": {
+                    "name": "Reliability",
+                    "type": "number",
+                    "value": 97.3
+                },
+                "description": {
+                    "name": "Description",
+                    "type": "string",
+                    "value": "Fork of Mysql"
+                },
+                "category": {
+                    "name": "Category",
+                    "type": "string",
+                    "value": "AWS PaaS"
+                },
+                "costs": {
+                    "name": "Costs",
+                    "type": "number",
+                    "value": 0
+                },
+                "costsunit": {
+                    "name": "Cost Unit",
+                    "type": "string",
+                    "value": ""
+                }
+            },
+            "parents": [
+                "RDSAWS"
+            ]
+        },
         "MARIADB": {
             "id": "MARIADB",
             "type": "Node",
@@ -1175,7 +1114,7 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "PaaS"
+                    "value": "AWS PaaS"
                 },
                 "costs": {
                     "name": "Costs",
@@ -1252,7 +1191,7 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "PaaS"
+                    "value": "AWS PaaS"
                 },
                 "costs": {
                     "name": "Costs",
@@ -1318,7 +1257,7 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "SaaS"
+                    "value": "AWS SaaS"
                 }
             }
         },
@@ -1566,7 +1505,14 @@
                     "minOccurence": 1,
                     "maxOccurence": 1
                 }
-            ]
+            ], 
+            "attr": {
+                "category": {
+                    "name": "Category",
+                    "type": "string",
+                    "value": "AWS Cloud Templates"
+                }
+        }
         },
         "TWO_TIER_PATTERN": {
             "id": "TWO_TIER_PATTERN",
@@ -1584,7 +1530,14 @@
                     "minOccurence": 1,
                     "maxOccurence": 1
                 }
-            ]
+            ], 
+            "attr": {
+                "category": {
+                    "name": "Category",
+                    "type": "string",
+                    "value": "AWS Cloud Templates"
+                }
+        }
         },
         "VM_AS_A_SERVICE": {
             "id": "VM_AS_A_SERVICE",
@@ -1607,7 +1560,14 @@
                     "minOccurence": 1,
                     "maxOccurence": 1
                 }
-            ]
+            ], 
+            "attr": {
+                "category": {
+                    "name": "Category",
+                    "type": "string",
+                    "value": "AWS Cloud Templates"
+                }
         }
     }
+}
 }

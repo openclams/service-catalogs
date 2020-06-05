@@ -16,22 +16,8 @@
       "category": {
         "name": "Category",
         "type": "string",
-        "value": "Azure Processing VM"
-      }, 
-      "regions" : [
-        {
-          "id" : "centralus", 
-          "name": "Central US"
-        }, 
-        {
-          "id": "northeurope", 
-          "name": "North Europe"
-        }, 
-        {
-          "id": "westeurope", 
-          "name" : "West Europe"
-        }
-      ]
+        "value": "Azure Processing"
+      }
     }
   },
   {
@@ -51,23 +37,12 @@
       "category": {
         "name": "Category",
         "type": "string",
-        "value": "Cloud Components"
-      }, 
-      "regions" : [
-        {
-          "id" : "centralus", 
-          "name": "Central US"
-        }, 
-        {
-          "id": "northeurope", 
-          "name": "North Europe"
-        }, 
-        {
-          "id": "westeurope", 
-          "name" : "West Europe"
-        }
-      ]
-    }
+        "value": "Azure Processing"
+      }
+    },
+    "parents": [
+      "Azure VM"
+  ]
   },
   {
     "id": "AZURE_FUNCTIONS",
@@ -86,194 +61,6 @@
         "name": "Category",
         "type": "string",
         "value": "Azure FAAS"
-      }, 
-      "regions" : [
-        {
-          "id" : "centralus", 
-          "name": "Central US"
-        }, 
-        {
-          "id": "northeurope", 
-          "name": "North Europe"
-        }, 
-        {
-          "id": "westeurope", 
-          "name" : "West Europe"
-        }
-      ]
-    }
-  },
-  {
-    "id": "SPRING_FRAMEWORK",
-    "type": "Node",
-    "name": "Spring Boot Service",
-    "img": "icons/SPRING_FRAMEWORK.png",
-    "children": [],
-    "attr": {
-      "scalable": {
-        "name": "Scalable",
-        "type": "boolean",
-        "value": true
-      },
-      "maxscalable": {
-        "name": "Max. Instances",
-        "type": "integer",
-        "value": 20
-      },
-      "reliability": {
-        "name": "Reliability",
-        "type": "number",
-        "value": 99.99
-      },
-      "description": {
-        "name": "Description",
-        "type": "string",
-        "value": "A Microservice build with Spring"
-      },
-      "category": {
-        "name": "Category",
-        "type": "string",
-        "value": "Cloud Components"
-      },
-      "costs": {
-        "name": "Costs",
-        "type": "number",
-        "value": 0
-      },
-      "costsunit": {
-        "name": "Cost Unit",
-        "type": "string",
-        "value": ""
-      }
-    }
-  },
-  {
-    "id": "USER_INTERFACE_COMPONENT",
-    "type": "Node",
-    "name": "Frontend",
-    "img": "../pattern_icons/user_interface_component.png",
-    "children": [
-      "ANGULAR_FRONTEND"
-    ],
-    "attr": {
-      "description": {
-        "name": "Description",
-        "type": "string",
-        "value": "A Frontend for user input"
-      },
-      "category": {
-        "name": "Category",
-        "type": "string",
-        "value": "Cloud Patterns"
-      }
-    }
-  },
-  {
-    "id": "ANGULAR_FRONTEND",
-    "type": "Node",
-    "name": "Angular Frontend",
-    "img": "icons/ANGULAR_FRONTEND.png",
-    "children": [],
-    "attr": {
-      "scalable": {
-        "name": "Scalable",
-        "type": "boolean",
-        "value": false
-      },
-      "maxscalable": {
-        "name": "Max. Instances",
-        "type": "integer",
-        "value": 1
-      },
-      "reliability": {
-        "name": "Reliability",
-        "type": "number",
-        "value": 91.73
-      },
-      "description": {
-        "name": "Description",
-        "type": "string",
-        "value": "A Frontend build with Angular 2+"
-      },
-      "category": {
-        "name": "Category",
-        "type": "string",
-        "value": "Cloud Components"
-      },
-      "costs": {
-        "name": "Costs",
-        "type": "number",
-        "value": 0
-      },
-      "costsunit": {
-        "name": "Cost Unit",
-        "type": "string",
-        "value": ""
-      }
-    }
-  },
-  {
-    "id": "MESSAGE_BROKER",
-    "type": "Node",
-    "name": "Messaging Broker",
-    "img": "../pattern_icons/message-oriented_middleware.png",
-    "children": [
-      "RabbitMQ"
-    ],
-    "attr": {
-      "description": {
-        "name": "Description",
-        "type": "string",
-        "value": "A abstract message broker"
-      },
-      "category": {
-        "name": "Category",
-        "type": "string",
-        "value": "Cloud Patterns"
-      }
-    }
-  },
-  {
-    "id": "LOAD_BALANCER",
-    "type": "Node",
-    "name": "Load Balancer",
-    "img": "../pattern_icons/elastic_load_balancer.png",
-    "children": [],
-    "attr": {
-      "scalable": {
-        "name": "Scalable",
-        "type": "boolean",
-        "value": false
-      },
-      "maxscalable": {
-        "name": "Max. Instances",
-        "type": "integer",
-        "value": 1
-      },
-      "reliability": {
-        "name": "Reliability",
-        "type": "number",
-        "value": 99.6
-      },
-      "description": {
-        "name": "Description",
-        "type": "string",
-        "value": "Any load balancer hosted anywhere"
-      },
-      "category": {
-        "name": "Category",
-        "type": "string",
-        "value": "Cloud Patterns"
-      },
-      "costs": {
-        "name": "Costs",
-        "type": "number",
-        "value": 10
-      },
-      "costsunit": {
-        "name": "Cost Unit",
-        "type": "string",
-        "value": "h"
       }
     }
   }

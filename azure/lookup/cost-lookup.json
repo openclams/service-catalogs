@@ -2,52 +2,42 @@
     
     "costTable": [
     {
-        "id": "Azure VM", 
-        "regions": [
-            {
-                "id": "centralus", 
-                "type" : "number", 
-                "value": "1.98"
-            },
-            {
-                "id": "northeurope", 
-                "type" : "number", 
-                "value": "1.08"
-            }, 
-            {
-                "id": "westeurope", 
-                "type" : "number", 
-                "value": "1.55"
-            },
-            {
-                "id": "asia2", 
-                "type" : "number", 
-                "value": "1.775"
-            }
-        ]
-    },
-    {
         "id": "E2_V3", 
         "regions": [
             {
-                "id": "centralus", 
+                "id": "europe-north", 
                 "type" : "number", 
-                "value": "1.98"
+                "value": "0.233"
             },
             {
-                "id": "northeurope", 
+                "id": "europe-west", 
                 "type" : "number", 
-                "value": "1.08"
+                "value": "0.252"
             }, 
             {
-                "id": "westeurope", 
+                "id": "france-central", 
                 "type" : "number", 
-                "value": "1.55"
+                "value": "0.248"
             },
             {
-                "id": "asia2", 
+                "id": "germany-west-central", 
                 "type" : "number", 
-                "value": "1.775"
+                "value": "0.272"
+            }, 
+            {
+                "id": "switzerland-north", 
+                "type" : "number", 
+                "value": "0.284"
+            },
+            {
+                "id": "united-kingdom-south", 
+                "type" : "number", 
+                "value": "0.248"
+            },
+            {
+                "id": "united-kingdom-west", 
+                "type" : "number", 
+                "value": "0.248"
             }
         ]
     }, 
@@ -55,66 +45,61 @@
         "id": "AZURE_FUNCTIONS", 
         "regions" : [
             {
-                "id": "centralus", 
+                "id": "europe-north", 
                 "type" : "number", 
-                "value": "1.98"
+                "value": "0.03583"
             },
             {
-                "id": "northeurope", 
+                "id": "europe-west", 
                 "type" : "number", 
-                "value": "1.08"
+                "value": "0.03583"
             }, 
             {
-                "id": "westeurope", 
+                "id": "france-central", 
                 "type" : "number", 
-                "value": "1.55"
+                "value": "0.03583"
             },
             {
-                "id": "asia2", 
+                "id": "germany-west-central", 
                 "type" : "number", 
-                "value": "1.775"
-            }
-        ]
-    }, 
-    {
-        "id": "mySQLtest", 
-        "regions" : [
-            {
-                "id": "eu-west-fr", 
-                "type" : "number", 
-                "value": "1.67"
-            },
-            {
-                "id": "eu-west-st", 
-                "type" : "number", 
-                "value": "1.01"
+                "value": "0.03583"
             }, 
             {
-                "id": "asia1", 
+                "id": "switzerland-north", 
                 "type" : "number", 
-                "value": "1.99"
+                "value": "0.03583"
+            },
+            {
+                "id": "united-kingdom-south", 
+                "type" : "number", 
+                "value": "0.03583"
+            },
+            {
+                "id": "united-kingdom-west", 
+                "type" : "number", 
+                "value": "0.03583"
             }
         ]
     },
     {
-        "id": "mySQLtest2", 
-        "regions" : [
-            {
-                "id": "eu-west-fr", 
-                "type" : "number", 
-                "value": "1.67"
-            },
-            {
-                "id": "eu-west-st", 
-                "type" : "number", 
-                "value": "1.01"
-            }, 
-            {
-                "id": "asia1", 
-                "type" : "number", 
-                "value": "1.99"
-            }
-        ]
-    }
+    "id": "AZUREMYSQL",
+    "regions": [
+        {
+            "id": "europe-north", 
+            "type" : "number", 
+            "value": "0.1033"
+        },
+        {
+            "id": "europe-west", 
+            "type" : "number", 
+            "value": "0.112652"
+        }, 
+        {
+            "id": "france-central", 
+            "type" : "number", 
+            "value": "0.1172"
+        }
+    ]
+} 
 ]
 }

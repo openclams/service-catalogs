@@ -1,101 +1,5 @@
 {
     "Nodes": {
-        "MongoDB": {
-            "id": "MongoDB",
-            "type": "Node",
-            "name": "MongoDB",
-            "img": "icons/MongoDB.png",
-            "children": [
-                "MongoDB_Free",
-                "MongoDB_Shared"
-            ],
-            "attr": {
-                "description": {
-                    "name": "Description",
-                    "type": "string",
-                    "value": "Persistence service for document-oriented data."
-                },
-                "category": {
-                    "name": "Category",
-                    "type": "string",
-                    "value": "PaaS"
-                }
-            }
-        },
-        "MongoDB_Free": {
-            "id": "MongoDB_Free",
-            "type": "Node",
-            "name": "MongoDB Free",
-            "img": "icons/MongoDB_Free.png",
-            "children": [],
-            "attr": {
-                "scalable": {
-                    "name": "Scalable",
-                    "type": "boolean",
-                    "value": false
-                },
-                "maxscalable": {
-                    "name": "Max. Instances",
-                    "type": "integer",
-                    "value": 1
-                },
-                "reliability": {
-                    "name": "Reliability",
-                    "type": "number",
-                    "value": 95.73
-                },
-                "costs": {
-                    "name": "Costs",
-                    "type": "number",
-                    "value": 0
-                },
-                "costsunit": {
-                    "name": "Cost Unit",
-                    "type": "string",
-                    "value": ""
-                }
-            },
-            "parents": [
-                "MongoDB"
-            ]
-        },
-        "MongoDB_Shared": {
-            "id": "MongoDB_Shared",
-            "type": "Node",
-            "name": "MongoDB Shared",
-            "img": "icons/MongoDB_Shared.png",
-            "children": [],
-            "attr": {
-                "scalable": {
-                    "name": "Scalable",
-                    "type": "boolean",
-                    "value": false
-                },
-                "maxscalable": {
-                    "name": "Max. Instances",
-                    "type": "integer",
-                    "value": 1
-                },
-                "reliability": {
-                    "name": "Reliability",
-                    "type": "number",
-                    "value": 94.73
-                },
-                "costs": {
-                    "name": "Costs",
-                    "type": "number",
-                    "value": 0
-                },
-                "costsunit": {
-                    "name": "Cost Unit",
-                    "type": "string",
-                    "value": ""
-                }
-            },
-            "parents": [
-                "MongoDB"
-            ]
-        },
         "Virtual_Machine_Linux": {
             "id": "Virtual_Machine_Linux",
             "type": "Node",
@@ -114,7 +18,7 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "PaaS"
+                    "value": "Azure PaaS"
                 }
             }
         },
@@ -209,7 +113,7 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "PaaS"
+                    "value": "Azure PaaS"
                 }
             }
         },
@@ -267,22 +171,8 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "Azure Processing VM"
-                },
-                "regions": [
-                    {
-                        "id": "centralus",
-                        "name": "Central US"
-                    },
-                    {
-                        "id": "northeurope",
-                        "name": "North Europe"
-                    },
-                    {
-                        "id": "westeurope",
-                        "name": "West Europe"
-                    }
-                ]
+                    "value": "Azure Processing"
+                }
             }
         },
         "E2_V3": {
@@ -301,23 +191,10 @@
                     "name": "Category",
                     "type": "string",
                     "value": "Cloud Components"
-                },
-                "regions": [
-                    {
-                        "id": "centralus",
-                        "name": "Central US"
-                    },
-                    {
-                        "id": "northeurope",
-                        "name": "North Europe"
-                    },
-                    {
-                        "id": "westeurope",
-                        "name": "West Europe"
-                    }
-                ]
+                }
             },
             "parents": [
+                "Azure VM",
                 "Azure VM"
             ]
         },
@@ -336,22 +213,8 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "Azure FAAS"
-                },
-                "regions": [
-                    {
-                        "id": "centralus",
-                        "name": "Central US"
-                    },
-                    {
-                        "id": "northeurope",
-                        "name": "North Europe"
-                    },
-                    {
-                        "id": "westeurope",
-                        "name": "West Europe"
-                    }
-                ]
+                    "value": "Azure Processing"
+                }
             }
         },
         "SPRING_FRAMEWORK": {
@@ -415,7 +278,7 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "Cloud Patterns"
+                    "value": "Azure Cloud Patterns"
                 }
             }
         },
@@ -472,7 +335,6 @@
             "name": "Messaging Broker",
             "img": "../pattern_icons/message-oriented_middleware.png",
             "children": [
-                "RabbitMQ"
             ],
             "attr": {
                 "description": {
@@ -483,7 +345,7 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "Cloud Patterns"
+                    "value": "Azure Cloud Patterns"
                 }
             }
         },
@@ -517,7 +379,7 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "Cloud Patterns"
+                    "value": "Azure Cloud Patterns"
                 },
                 "costs": {
                     "name": "Costs",
@@ -530,67 +392,6 @@
                     "value": "h"
                 }
             }
-        },
-        "RabbitMQ": {
-            "id": "RabbitMQ",
-            "type": "Node",
-            "name": "RabbitMQ",
-            "img": "icons/RabbitMQ.png",
-            "children": [
-                "RabbitMQ_Shared"
-            ],
-            "attr": {
-                "description": {
-                    "name": "Description",
-                    "type": "string",
-                    "value": "Scalable high-performance multi-protocol messaging broker."
-                },
-                "category": {
-                    "name": "Category",
-                    "type": "string",
-                    "value": "SaaS"
-                }
-            },
-            "parents": [
-                "MESSAGE_BROKER"
-            ]
-        },
-        "RabbitMQ_Shared": {
-            "id": "RabbitMQ_Shared",
-            "type": "Node",
-            "name": "RabbitMQ Shared",
-            "img": "icons/RabbitMQ_Shared.png",
-            "children": [],
-            "attr": {
-                "scalable": {
-                    "name": "Scalable",
-                    "type": "boolean",
-                    "value": false
-                },
-                "maxscalable": {
-                    "name": "Max. Instances",
-                    "type": "integer",
-                    "value": 1
-                },
-                "reliability": {
-                    "name": "Reliability",
-                    "type": "number",
-                    "value": 99.73
-                },
-                "costs": {
-                    "name": "Costs",
-                    "type": "number",
-                    "value": 30
-                },
-                "costsunit": {
-                    "name": "Cost Unit",
-                    "type": "string",
-                    "value": "h"
-                }
-            },
-            "parents": [
-                "RabbitMQ"
-            ]
         },
         "STATEFUL_COMPONENT": {
             "id": "STATEFUL_COMPONENT",
@@ -609,7 +410,7 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "Cloud icons"
+                    "value": "Azure Cloud Patterns"
                 }
             }
         },
@@ -631,7 +432,7 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "Cloud icons"
+                    "value": "Azure Cloud Patterns"
                 }
             },
             "parents": [
@@ -644,7 +445,6 @@
             "name": "Relational Database",
             "img": "../pattern_icons/relational_database.png",
             "children": [
-                "MYSQL",
                 "MARIADB"
             ],
             "attr": {
@@ -656,7 +456,7 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "Cloud icons"
+                    "value": "Azure Cloud Patterns"
                 }
             },
             "parents": [
@@ -669,7 +469,6 @@
             "name": "Blob Storage",
             "img": "../pattern_icons/blob_storage.png",
             "children": [
-                "AZURE_BLOB_STORAGE"
             ],
             "attr": {
                 "description": {
@@ -680,7 +479,7 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "Cloud icons"
+                    "value": "Azure Cloud Patterns"
                 },
                 "regions": [
                     {
@@ -717,11 +516,11 @@
                 "DATABASE_ABSTRACT"
             ]
         },
-        "MYSQL": {
-            "id": "MYSQL",
+        "MYSQLAZURE": {
+            "id": "MYSQLAZURE",
             "type": "Node",
             "name": "MySQL",
-            "img": "icons/MYSQL.png",
+            "img": "icons/azure_mysql.png",
             "children": [],
             "attr": {
                 "scalable": {
@@ -747,7 +546,7 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "PaaS"
+                    "value": "Azure Databases"
                 },
                 "costs": {
                     "name": "Costs",
@@ -880,7 +679,7 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "PaaS"
+                    "value": "Azure PaaS"
                 },
                 "costs": {
                     "name": "Costs",
@@ -927,11 +726,11 @@
                 "RELATIONAL_DATABASE"
             ]
         },
-        "AZURE_BLOB_STORAGE": {
-            "id": "AZURE_BLOB_STORAGE",
+        "AZUREMYSQL": {
+            "id": "AZUREMYSQL",
             "type": "Node",
-            "name": "Azure Blob Storage",
-            "img": "icons/AZURE_BLOB_STORAGE.png",
+            "name": "Azure MySQL",
+            "img": "icons/azure_mysql.png",
             "children": [],
             "attr": {
                 "scalable": {
@@ -957,12 +756,7 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "PaaS"
-                },
-                "costs": {
-                    "name": "Costs",
-                    "type": "number",
-                    "value": 0.0156
+                    "value": "Azure Databases"
                 },
                 "costsunit": {
                     "name": "Cost Unit",
@@ -999,144 +793,7 @@
                         "name": "Asia-South1-Singapur"
                     }
                 ]
-            },
-            "parents": [
-                "BLOB_STORAGE"
-            ]
-        },
-        "Elastic_Runtime": {
-            "id": "Elastic_Runtime",
-            "type": "Node",
-            "name": "Elastic Runtime",
-            "img": "icons/Elastic_Runtime.png",
-            "children": [
-                "Elastic_Runtime_Micro",
-                "Elastic_Runtime_Medium",
-                "Elastic_Runtime_Large"
-            ],
-            "attr": {
-                "description": {
-                    "name": "Description",
-                    "type": "string",
-                    "value": "Runtime environment for cloud native applications."
-                },
-                "category": {
-                    "name": "Category",
-                    "type": "string",
-                    "value": "SaaS"
-                }
             }
-        },
-        "Elastic_Runtime_Micro": {
-            "id": "Elastic_Runtime_Micro",
-            "type": "Node",
-            "name": "Elastic Runtime Micro",
-            "img": "icons/Elastic_Runtime_Micro.png",
-            "children": [],
-            "attr": {
-                "scalable": {
-                    "name": "Scalable",
-                    "type": "boolean",
-                    "value": false
-                },
-                "maxscalable": {
-                    "name": "Max. Instances",
-                    "type": "integer",
-                    "value": 1
-                },
-                "reliability": {
-                    "name": "Reliability",
-                    "type": "number",
-                    "value": 96.73
-                },
-                "costs": {
-                    "name": "Costs",
-                    "type": "number",
-                    "value": 0.001
-                },
-                "costsunit": {
-                    "name": "Cost Unit",
-                    "type": "string",
-                    "value": "h"
-                }
-            },
-            "parents": [
-                "Elastic_Runtime"
-            ]
-        },
-        "Elastic_Runtime_Medium": {
-            "id": "Elastic_Runtime_Medium",
-            "type": "Node",
-            "name": "Elastic Runtime Medium",
-            "img": "icons/Elastic_Runtime_Medium.png",
-            "children": [],
-            "attr": {
-                "scalable": {
-                    "name": "Scalable",
-                    "type": "boolean",
-                    "value": false
-                },
-                "maxscalable": {
-                    "name": "Max. Instances",
-                    "type": "integer",
-                    "value": 1
-                },
-                "reliability": {
-                    "name": "Reliability",
-                    "type": "number",
-                    "value": 96.73
-                },
-                "costs": {
-                    "name": "Costs",
-                    "type": "number",
-                    "value": 0.005
-                },
-                "costsunit": {
-                    "name": "Cost Unit",
-                    "type": "string",
-                    "value": "h"
-                }
-            },
-            "parents": [
-                "Elastic_Runtime"
-            ]
-        },
-        "Elastic_Runtime_Large": {
-            "id": "Elastic_Runtime_Large",
-            "type": "Node",
-            "name": "Elastic Runtime Large",
-            "img": "icons/Elastic_Runtime_Large.png",
-            "children": [],
-            "attr": {
-                "scalable": {
-                    "name": "Scalable",
-                    "type": "boolean",
-                    "value": false
-                },
-                "maxscalable": {
-                    "name": "Max. Instances",
-                    "type": "integer",
-                    "value": 1
-                },
-                "reliability": {
-                    "name": "Reliability",
-                    "type": "number",
-                    "value": 96.73
-                },
-                "costs": {
-                    "name": "Costs",
-                    "type": "number",
-                    "value": 0.01
-                },
-                "costsunit": {
-                    "name": "Cost Unit",
-                    "type": "string",
-                    "value": "h"
-                }
-            },
-            "parents": [
-                "Elastic_Runtime"
-            ]
         },
         "ACTOR_DEFAULT": {
             "id": "ACTOR_DEFAULT",
@@ -1153,7 +810,7 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "Actors"
+                    "value": "Azure Actors"
                 },
                 "scalable": {
                     "name": "Scalable",
@@ -1187,7 +844,7 @@
                 "category": {
                     "name": "Category",
                     "type": "string",
-                    "value": "Actors"
+                    "value": "Azure Actors"
                 },
                 "scalable": {
                     "name": "Scalable",
@@ -1271,7 +928,14 @@
                     "minOccurence": 1,
                     "maxOccurence": 1
                 }
-            ]
+            ], 
+            "attr":{
+                "category": {
+                    "name": "Category",
+                    "type": "string",
+                    "value": "Azure Templates"
+                }
+            }
         },
         "TWO_TIER_PATTERN": {
             "id": "TWO_TIER_PATTERN",
@@ -1289,7 +953,14 @@
                     "minOccurence": 1,
                     "maxOccurence": 1
                 }
-            ]
+            ], 
+            "attr":{
+                "category": {
+                    "name": "Category",
+                    "type": "string",
+                    "value": "Azure Templates"
+                }
+            }
         },
         "VM_AS_A_SERVICE": {
             "id": "VM_AS_A_SERVICE",
@@ -1312,7 +983,14 @@
                     "minOccurence": 1,
                     "maxOccurence": 1
                 }
-            ]
+            ], 
+            "attr":{
+                "category": {
+                    "name": "Category",
+                    "type": "string",
+                    "value": "Azure Templates"
+                }
+            }
         }
     }
 }
