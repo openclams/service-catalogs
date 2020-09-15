@@ -1,6 +1,6 @@
 {
-    "Nodes": {
-        "MongoDB": {
+    "nodes": [
+         {
             "id": "MongoDB",
             "type": "Node",
             "name": "MongoDB",
@@ -9,94 +9,74 @@
                 "MongoDB_Free",
                 "MongoDB_Shared"
             ],
-            "attr": {
-                "description": {
+            "attributes": [
+                {"id":"description",
                     "name": "Description",
                     "type": "string",
                     "value": "Persistence service for document-oriented data."
                 },
-                "category": {
+                {"id":"category",
                     "name": "Category",
                     "type": "string",
                     "value": "PaaS"
                 }
-            }
+            ]
         },
-        "MongoDB_Free": {
+         {
             "id": "MongoDB_Free",
             "type": "Node",
             "name": "MongoDB Free",
             "img": "icons/MongoDB_Free.png",
             "children": [],
-            "attr": {
-                "scalable": {
+            "attributes": [
+                {"id":"scalable",
                     "name": "Scalable",
                     "type": "boolean",
                     "value": false
                 },
-                "maxscalable": {
+                {"id":"maxscalable",
                     "name": "Max. Instances",
                     "type": "integer",
                     "value": 1
                 },
-                "reliability": {
+                {"id":"reliability",
                     "name": "Reliability",
                     "type": "number",
-                    "value": 95.73
-                },
-                "costs": {
-                    "name": "Costs",
-                    "type": "number",
-                    "value": 0
-                },
-                "costsunit": {
-                    "name": "Cost Unit",
-                    "type": "string",
-                    "value": ""
+                    "value": 96.73
                 }
-            },
+            ],
             "parents": [
                 "MongoDB"
             ]
         },
-        "MongoDB_Shared": {
+         {
             "id": "MongoDB_Shared",
             "type": "Node",
             "name": "MongoDB Shared",
             "img": "icons/MongoDB_Shared.png",
             "children": [],
-            "attr": {
-                "scalable": {
+            "attributes": [
+                {"id":"scalable",
                     "name": "Scalable",
                     "type": "boolean",
                     "value": false
                 },
-                "maxscalable": {
+                {"id":"maxscalable",
                     "name": "Max. Instances",
                     "type": "integer",
                     "value": 1
                 },
-                "reliability": {
+                {"id":"reliability",
                     "name": "Reliability",
                     "type": "number",
-                    "value": 94.73
-                },
-                "costs": {
-                    "name": "Costs",
-                    "type": "number",
-                    "value": 0
-                },
-                "costsunit": {
-                    "name": "Cost Unit",
-                    "type": "string",
-                    "value": ""
+                    "value": 96.73
                 }
-            },
+            ],
             "parents": [
                 "MongoDB"
             ]
         },
-        "Virtual_Machine_Linux": {
+         {
             "id": "Virtual_Machine_Linux",
             "type": "Node",
             "name": "Virtual Machine Linux",
@@ -105,94 +85,74 @@
                 "Virtual_Machine_Linux_Micro",
                 "Virtual_Machine_Linux_Large"
             ],
-            "attr": {
-                "description": {
+            "attributes": [
+                {"id":"description",
                     "name": "Description",
                     "type": "string",
                     "value": "A VM running a Linux Distro."
                 },
-                "category": {
+                {"id":"category",
                     "name": "Category",
                     "type": "string",
                     "value": "PaaS"
                 }
-            }
+            ]
         },
-        "Virtual_Machine_Linux_Micro": {
+        {
             "id": "Virtual_Machine_Linux_Micro",
             "type": "Node",
             "name": "Virtual Machine Linux Micro",
             "img": "icons/Virtual_Machine_Linux_Micro.png",
             "children": [],
-            "attr": {
-                "scalable": {
+            "attributes": [
+                {"id":"scalable",
                     "name": "Scalable",
                     "type": "boolean",
                     "value": false
                 },
-                "maxscalable": {
+                {"id":"maxscalable",
                     "name": "Max. Instances",
                     "type": "integer",
                     "value": 1
                 },
-                "reliability": {
+                {"id":"reliability",
                     "name": "Reliability",
                     "type": "number",
-                    "value": 99.37
-                },
-                "costs": {
-                    "name": "Costs",
-                    "type": "number",
-                    "value": 0.162
-                },
-                "costsunit": {
-                    "name": "Cost Unit",
-                    "type": "string",
-                    "value": "h"
+                    "value": 96.73
                 }
-            },
+            ],
             "parents": [
                 "Virtual_Machine_Linux"
             ]
         },
-        "Virtual_Machine_Linux_Large": {
+        {
             "id": "Virtual_Machine_Linux_Large",
             "type": "Node",
             "name": "Virtual Machine Linux Large",
             "img": "icons/Virtual_Machine_Linux_Large.png",
             "children": [],
-            "attr": {
-                "scalable": {
+            "attributes": [
+                {"id":"scalable",
                     "name": "Scalable",
                     "type": "boolean",
                     "value": false
                 },
-                "maxscalable": {
+                {"id":"maxscalable",
                     "name": "Max. Instances",
                     "type": "integer",
                     "value": 1
                 },
-                "reliability": {
+                {"id":"reliability",
                     "name": "Reliability",
                     "type": "number",
-                    "value": 99.37
-                },
-                "costs": {
-                    "name": "Costs",
-                    "type": "number",
-                    "value": 0.225
-                },
-                "costsunit": {
-                    "name": "Cost Unit",
-                    "type": "string",
-                    "value": "h"
+                    "value": 96.73
                 }
-            },
+            ],
             "parents": [
                 "Virtual_Machine_Linux"
             ]
         },
-        "Virtual_Machine_Jump_Host": {
+         {
             "id": "Virtual_Machine_Jump_Host",
             "type": "Node",
             "name": "Virtual Machine Jump Host",
@@ -200,57 +160,47 @@
             "children": [
                 "Virtual_Machine_Jump_Host_Linux_SSH"
             ],
-            "attr": {
-                "description": {
+            "attributes": [
+                 {"id":"description",
                     "name": "Description",
                     "type": "string",
                     "value": "A VM used for Jump Hosting."
-                },
-                "category": {
+                 },
+                 {"id":"category",
                     "name": "Category",
                     "type": "string",
                     "value": "PaaS"
                 }
-            }
+            ]
         },
-        "Virtual_Machine_Jump_Host_Linux_SSH": {
+         {
             "id": "Virtual_Machine_Jump_Host_Linux_SSH",
             "type": "Node",
             "name": "Virtual Machine Jump Host Linux SSH",
             "img": "icons/Virtual_Machine_Jump_Host_Linux_SSH.png",
             "children": [],
-            "attr": {
-                "scalable": {
+            "attributes": [
+                {"id":"scalable",
                     "name": "Scalable",
                     "type": "boolean",
                     "value": false
                 },
-                "maxscalable": {
+                {"id":"maxscalable",
                     "name": "Max. Instances",
                     "type": "integer",
                     "value": 1
                 },
-                "reliability": {
+                {"id":"reliability",
                     "name": "Reliability",
                     "type": "number",
-                    "value": 99.37
-                },
-                "costs": {
-                    "name": "Costs",
-                    "type": "number",
-                    "value": 0.603
-                },
-                "costsunit": {
-                    "name": "Cost Unit",
-                    "type": "string",
-                    "value": "h"
+                    "value": 96.73
                 }
-            },
+            ],
             "parents": [
                 "Virtual_Machine_Jump_Host"
             ]
         },
-        "STATELESS_COMPONENT": {
+         {
             "id": "STATELESS_COMPONENT",
             "type": "Node",
             "name": "Stateless Component",
@@ -259,20 +209,20 @@
                 "PROCESSING_COMPONENT",
                 "MESSAGE_BROKER"
             ],
-            "attr": {
-                "description": {
+            "attributes": [
+                 {"id":"description",
                     "name": "Description",
                     "type": "string",
                     "value": "An abstraction of a component that doesnt hold state"
-                },
-                "category": {
+                 },
+                 {"id":"category",
                     "name": "Category",
                     "type": "string",
                     "value": "Cloud Patterns"
                 }
-            }
+            ]
         },
-        "PROCESSING_COMPONENT": {
+       {
             "id": "PROCESSING_COMPONENT",
             "type": "Node",
             "name": "Processing Component",
@@ -280,138 +230,126 @@
             "children": [
                 "SPRING_FRAMEWORK"
             ],
-            "attr": {
-                "description": {
+            "attributes": [
+                {"id":"description",
                     "name": "Description",
                     "type": "string",
                     "value": "A Component that processes data"
                 },
-                "category": {
+                {"id":"category",
                     "name": "Category",
                     "type": "string",
                     "value": "Cloud Patterns"
                 }
-            },
+            ],
             "parents": [
                 "STATELESS_COMPONENT"
             ]
         },
-        "SPRING_FRAMEWORK": {
+        {
             "id": "SPRING_FRAMEWORK",
             "type": "Node",
             "name": "Spring Boot Service",
             "img": "icons/SPRING_FRAMEWORK.png",
             "children": [],
-            "attr": {
-                "scalable": {
+            "attributes": [
+                {"id":"scalable",
                     "name": "Scalable",
                     "type": "boolean",
                     "value": true
                 },
-                "maxscalable": {
+                {"id":"maxscalable",
                     "name": "Max. Instances",
                     "type": "integer",
                     "value": 20
                 },
-                "reliability": {
+                {"id":"reliability",
                     "name": "Reliability",
                     "type": "number",
                     "value": 99.99
                 },
-                "description": {
+                {"id":"description",
                     "name": "Description",
                     "type": "string",
                     "value": "A Microservice build with Spring"
                 },
-                "category": {
+                {"id":"category",
                     "name": "Category",
                     "type": "string",
                     "value": "Cloud Components"
-                },
-                "costs": {
-                    "name": "Costs",
-                    "type": "number",
-                    "value": 0
-                },
-                "costsunit": {
-                    "name": "Cost Unit",
-                    "type": "string",
-                    "value": ""
                 }
-            },
+            ],
             "parents": [
                 "PROCESSING_COMPONENT"
             ]
         },
-        "USER_INTERFACE_COMPONENT": {
+        {
             "id": "USER_INTERFACE_COMPONENT",
             "type": "Node",
             "name": "Frontend",
             "img": "../pattern_icons/user_interface_component.png",
-            "children": [
-                "ANGULAR_FRONTEND"
-            ],
-            "attr": {
-                "description": {
+            "children": [],
+            "attributes": [
+                {"id":"description",
                     "name": "Description",
                     "type": "string",
                     "value": "A Frontend for user input"
                 },
-                "category": {
+                {"id":"category",
                     "name": "Category",
                     "type": "string",
                     "value": "Cloud Patterns"
                 }
-            }
+            ]
         },
-        "ANGULAR_FRONTEND": {
-            "id": "ANGULAR_FRONTEND",
+        {
+            "id": "Amazon ECS",
             "type": "Node",
-            "name": "Angular Frontend",
-            "img": "icons/ANGULAR_FRONTEND.png",
+            "name": "Amazon ECS",
+            "img": "icons/ecs.png",
             "children": [],
-            "attr": {
-                "scalable": {
+            "attributes": [
+                {"id":"scalable",
                     "name": "Scalable",
                     "type": "boolean",
                     "value": false
                 },
-                "maxscalable": {
+                {"id":"maxscalable",
                     "name": "Max. Instances",
                     "type": "integer",
                     "value": 1
                 },
-                "reliability": {
+                {"id":"reliability",
                     "name": "Reliability",
                     "type": "number",
                     "value": 91.73
                 },
-                "description": {
+                {"id":"description",
                     "name": "Description",
                     "type": "string",
                     "value": "A Frontend build with Angular 2+"
                 },
-                "category": {
+                {"id":"category",
                     "name": "Category",
                     "type": "string",
-                    "value": "Cloud Components"
-                },
-                "costs": {
-                    "name": "Costs",
-                    "type": "number",
-                    "value": 0
-                },
-                "costsunit": {
-                    "name": "Cost Unit",
-                    "type": "string",
-                    "value": ""
+                    "value": "AWS Processing"
                 }
-            },
-            "parents": [
-                "USER_INTERFACE_COMPONENT"
-            ]
-        },
-        "MESSAGE_BROKER": {
+			],
+            "regions": [
+                    "us-east-2",
+                    "us-east-1",
+					"us-west-1",
+					"us-west-2",
+					"ap-east-1",
+					"ap-south-1", 
+					"ap-northeast-3",
+					"ap-northeast-1",
+					"ca-central-1", 
+					"eu-central-1",
+					"eu-west-1" 
+                ]
+       },
+        {
             "id": "MESSAGE_BROKER",
             "type": "Node",
             "name": "Messaging Broker",
@@ -419,67 +357,154 @@
             "children": [
                 "RabbitMQ"
             ],
-            "attr": {
-                "description": {
+            "attributes": [
+                {"id":"description",
                     "name": "Description",
                     "type": "string",
                     "value": "A abstract message broker"
                 },
-                "category": {
+                {"id":"category",
                     "name": "Category",
                     "type": "string",
-                    "value": "Cloud Patterns"
+                    "value": "Template"
                 }
-            },
+            ],
             "parents": [
                 "STATELESS_COMPONENT"
             ]
         },
-        "LOAD_BALANCER": {
-            "id": "LOAD_BALANCER",
+        {
+            "id": "Amazon EC2",
             "type": "Node",
-            "name": "Load Balancer",
-            "img": "../pattern_icons/elastic_load_balancer.png",
+            "name": "Amazon EC2",
+            "img": "icons/ec2.png",
             "children": [],
-            "attr": {
-                "scalable": {
+            "attributes": [
+                {"id":"scalable",
                     "name": "Scalable",
                     "type": "boolean",
                     "value": false
                 },
-                "maxscalable": {
+                {"id":"maxscalable",
                     "name": "Max. Instances",
                     "type": "integer",
                     "value": 1
                 },
-                "reliability": {
+                {"id":"reliability",
                     "name": "Reliability",
                     "type": "number",
-                    "value": 99.6
+                    "value": 99.99
                 },
-                "description": {
+                {"id":"description",
                     "name": "Description",
                     "type": "string",
                     "value": "Any load balancer hosted anywhere"
                 },
-                "category": {
+                {"id":"category",
                     "name": "Category",
                     "type": "string",
-                    "value": "Cloud Patterns"
+                    "value": "AWS Processing"
+                }],
+                "regions": [
+                    "us-east-2",
+                    "us-east-1",
+					"us-west-1",
+					"us-west-2",
+					"ca-central-1", 
+					"eu-central-1",
+					"eu-west-1" 
+                ]},
+         {
+            "id": "Amazon Lambda",
+            "type": "Node",
+            "name": "Amazon Lambda",
+            "img": "icons/lambda.png",
+            "children": [],
+            "attributes": [
+                {"id":"scalable",
+                    "name": "Scalable",
+                    "type": "boolean",
+                    "value": false
                 },
-                "costs": {
-                    "name": "Costs",
+                {"id":"maxscalable",
+                    "name": "Max. Instances",
+                    "type": "integer",
+                    "value": 1
+                },
+                {"id":"reliability",
+                    "name": "Reliability",
                     "type": "number",
-                    "value": 10
+                    "value": 99.99
                 },
-                "costsunit": {
-                    "name": "Cost Unit",
+                {"id":"description",
+                    "name": "Description",
                     "type": "string",
-                    "value": "h"
-                }
-            }
+                    "value": "Any load balancer hosted anywhere"
+                },
+                {"id":"category",
+                    "name": "Category",
+                    "type": "string",
+                    "value": "AWS Processing"
+                }],
+                "regions": [
+                    "us-east-2",
+                    "us-east-1",
+					"us-west-1",
+					"us-west-2",
+					"ap-east-1",
+					"ap-south-1", 
+					"ap-northeast-3",
+					"ap-northeast-1",
+					"ca-central-1"
+                ]
         },
-        "RabbitMQ": {
+        {
+            "id": "Amazon Beanstalk",
+            "type": "Node",
+            "name": "Amazon Beanstalk",
+            "img": "icons/beanstalk.png",
+            "children": [],
+            "attributes": [
+                {"id":"scalable",
+                    "name": "Scalable",
+                    "type": "boolean",
+                    "value": false
+                },
+                {"id":"maxscalable",
+                    "name": "Max. Instances",
+                    "type": "integer",
+                    "value": 1
+                },
+                {"id":"reliability",
+                    "name": "Reliability",
+                    "type": "number",
+                    "value": 99.99
+                },
+                {"id":"description",
+                    "name": "Description",
+                    "type": "string",
+                    "value": "Any load balancer hosted anywhere"
+                },
+                {"id":"category",
+                    "name": "Category",
+                    "type": "string",
+                    "value": "AWS Processing"
+                }],
+                "regions": [
+                    "us-east-2",
+                    "us-east-1",
+					"us-west-1",
+					"us-west-2",
+					"ap-east-1",
+					"ap-south-1", 
+					"ap-northeast-3",
+					"ap-northeast-1",
+					"ca-central-1", 
+					"eu-central-1",
+					"eu-west-1" 
+                ]
+        },
+        {
             "id": "RabbitMQ",
             "type": "Node",
             "name": "RabbitMQ",
@@ -487,60 +512,50 @@
             "children": [
                 "RabbitMQ_Shared"
             ],
-            "attr": {
-                "description": {
+            "attributes": [
+                {"id":"description",
                     "name": "Description",
                     "type": "string",
                     "value": "Scalable high-performance multi-protocol messaging broker."
                 },
-                "category": {
+                {"id":"category",
                     "name": "Category",
                     "type": "string",
                     "value": "SaaS"
                 }
-            },
+            ],
             "parents": [
                 "MESSAGE_BROKER"
             ]
         },
-        "RabbitMQ_Shared": {
+         {
             "id": "RabbitMQ_Shared",
             "type": "Node",
             "name": "RabbitMQ Shared",
             "img": "icons/RabbitMQ_Shared.png",
             "children": [],
-            "attr": {
-                "scalable": {
+            "attributes": [
+                {"id":"scalable",
                     "name": "Scalable",
                     "type": "boolean",
                     "value": false
                 },
-                "maxscalable": {
+                {"id":"maxscalable",
                     "name": "Max. Instances",
                     "type": "integer",
                     "value": 1
                 },
-                "reliability": {
+                {"id":"reliability",
                     "name": "Reliability",
                     "type": "number",
                     "value": 99.73
-                },
-                "costs": {
-                    "name": "Costs",
-                    "type": "number",
-                    "value": 30
-                },
-                "costsunit": {
-                    "name": "Cost Unit",
-                    "type": "string",
-                    "value": "h"
                 }
-            },
+            ],
             "parents": [
                 "RabbitMQ"
             ]
         },
-        "STATEFUL_COMPONENT": {
+         {
             "id": "STATEFUL_COMPONENT",
             "type": "Node",
             "name": "Stateful Component",
@@ -548,20 +563,20 @@
             "children": [
                 "DATABASE_ABSTRACT"
             ],
-            "attr": {
-                "description": {
+            "attributes": [
+                {"id":"description",
                     "name": "Description",
                     "type": "string",
                     "value": "An abstraction of a component that holds state"
                 },
-                "category": {
+                {"id":"category",
                     "name": "Category",
                     "type": "string",
                     "value": "Cloud icons"
                 }
-            }
+            ]
         },
-        "DATABASE_ABSTRACT": {
+         {
             "id": "DATABASE_ABSTRACT",
             "type": "Node",
             "name": "Database",
@@ -570,23 +585,23 @@
                 "BLOB_STORAGE",
                 "RELATIONAL_DATABASE"
             ],
-            "attr": {
-                "description": {
+            "attributes": [
+                {"id":"description",
                     "name": "Description",
                     "type": "string",
                     "value": "An abstract representation of a Database"
                 },
-                "category": {
+                {"id":"category",
                     "name": "Category",
                     "type": "string",
                     "value": "Cloud icons"
                 }
-            },
+            ],
             "parents": [
                 "STATEFUL_COMPONENT"
             ]
         },
-        "RELATIONAL_DATABASE": {
+        {
             "id": "RELATIONAL_DATABASE",
             "type": "Node",
             "name": "Relational Database",
@@ -595,23 +610,23 @@
                 "MYSQL",
                 "MARIADB"
             ],
-            "attr": {
-                "description": {
+            "attributes": [
+                {"id":"description",
                     "name": "Description",
                     "type": "string",
                     "value": "A relational DB like MySQL"
                 },
-                "category": {
+                {"id":"category",
                     "name": "Category",
                     "type": "string",
                     "value": "Cloud icons"
                 }
-            },
+            ],
             "parents": [
                 "DATABASE_ABSTRACT"
             ]
         },
-        "BLOB_STORAGE": {
+         {
             "id": "BLOB_STORAGE",
             "type": "Node",
             "name": "Blob Storage",
@@ -619,17 +634,17 @@
             "children": [
                 "AZURE_BLOB_STORAGE"
             ],
-            "attr": {
-                "description": {
+            "attributes": [
+                {"id":"description",
                     "name": "Description",
                     "type": "string",
                     "value": "A BLOB Storage type of a Database"
                 },
-                "category": {
+                {"id":"category",
                     "name": "Category",
                     "type": "string",
                     "value": "Cloud icons"
-                },
+                }],
                 "regions": [
                     {
                         "id": "any",
@@ -659,300 +674,150 @@
                         "id": "asia-southeast1",
                         "name": "Asia-South1-Singapur"
                     }
-                ]
-            },
+                ],
             "parents": [
                 "DATABASE_ABSTRACT"
             ]
         },
-        "MYSQL": {
+        {
             "id": "MYSQL",
             "type": "Node",
             "name": "MySQL",
             "img": "icons/MYSQL.png",
             "children": [],
-            "attr": {
-                "scalable": {
+            "attributes": [
+                {"id":"scalable",
                     "name": "Scalable",
                     "type": "boolean",
                     "value": true
                 },
-                "maxscalable": {
+                {"id":"maxscalable",
                     "name": "Max. Instances",
                     "type": "integer",
                     "value": 3
                 },
-                "reliability": {
+                {"id":"reliability",
                     "name": "Reliability",
                     "type": "number",
                     "value": 98.37
                 },
-                "description": {
+                {"id":"description",
                     "name": "Description",
                     "type": "string",
                     "value": "MySQL - a relational DB"
                 },
-                "category": {
+                {"id":"category",
                     "name": "Category",
                     "type": "string",
                     "value": "PaaS"
-                },
-                "costs": {
-                    "name": "Costs",
-                    "type": "number",
-                    "value": 0
-                },
-                "costsunit": {
-                    "name": "Cost Unit",
-                    "type": "string",
-                    "value": ""
-                },
-                "regions": [
-                    {
-                        "id": "any",
-                        "name": "All of the availible regions"
-                    },
-                    {
-                        "id": "euro-west-fr",
-                        "name": "Europa West Frankfurt"
-                    },
-                    {
-                        "id": "euro-west-st",
-                        "name": "Europa West Stuttgart"
-                    },
-                    {
-                        "id": "asia-east1",
-                        "name": "Asia-East1-Taiwan"
-                    },
-                    {
-                        "id": "asia-east2",
-                        "name": "Asia-East2-HongKong"
-                    },
-                    {
-                        "id": "asia-south1",
-                        "name": "Asia-South1-India"
-                    },
-                    {
-                        "id": "asia-southeast1",
-                        "name": "Asia-South1-Singapur"
-                    }
-                ]
-            },
-            "instance": {
-                "Germany": {
-                    "S1": {
-                        "reliability": {
-                            "name": "reliability",
-                            "type": "number",
-                            "value": 99.99
-                        },
-                        "cost": {
-                            "name": "const",
-                            "type": "float",
-                            "value": 12.12
-                        },
-                        "unit": {
-                            "name": "unit",
-                            "type": "string",
-                            "value": "hour"
-                        },
-                        "currency": {
-                            "name": "currency",
-                            "type": "string",
-                            "value": "euro"
-                        },
-                        "regions": [
-                            {
-                                "id": "any",
-                                "name": "All of the availible regions"
-                            },
-                            {
-                                "id": "euro-west-fr",
-                                "name": "Europa West Frankfurt"
-                            },
-                            {
-                                "id": "euro-west-st",
-                                "name": "Europa West Stuttgart"
-                            },
-                            {
-                                "id": "asia-east1",
-                                "name": "Asia-East1-Taiwan"
-                            },
-                            {
-                                "id": "asia-east2",
-                                "name": "Asia-East2-HongKong"
-                            },
-                            {
-                                "id": "asia-south1",
-                                "name": "Asia-South1-India"
-                            },
-                            {
-                                "id": "asia-southeast1",
-                                "name": "Asia-South1-Singapur"
-                            }
-                        ]
-                    }
-                }
-            },
+                }],
+                "regions":[
+                    "us-east-2",
+                    "us-east-1",
+					"us-west-1",
+					"us-west-2",
+					"ap-east-1",
+					"ap-south-1", 
+					"ap-northeast-3",
+					"ap-northeast-1",
+					"ca-central-1", 
+					"eu-central-1",
+					"eu-west-1" 
+                ],
             "parents": [
                 "RELATIONAL_DATABASE"
             ]
         },
-        "MARIADB": {
+        {
             "id": "MARIADB",
             "type": "Node",
             "name": "MariaDB",
             "img": "icons/MARIADB.png",
             "children": [],
-            "attr": {
-                "scalable": {
+            "attributes": [
+                {"id":"scalable",
                     "name": "Scalable",
                     "type": "boolean",
                     "value": true
                 },
-                "maxscalable": {
+                {"id":"maxscalable",
                     "name": "Max. Instances",
                     "type": "integer",
                     "value": 3
                 },
-                "reliability": {
+                {"id":"reliability",
                     "name": "Reliability",
                     "type": "number",
                     "value": 97.3
                 },
-                "description": {
+                {"id":"description",
                     "name": "Description",
                     "type": "string",
                     "value": "Fork of Mysql"
                 },
-                "category": {
+                {"id":"category",
                     "name": "Category",
                     "type": "string",
                     "value": "PaaS"
-                },
-                "costs": {
-                    "name": "Costs",
-                    "type": "number",
-                    "value": 0
-                },
-                "costsunit": {
-                    "name": "Cost Unit",
-                    "type": "string",
-                    "value": ""
-                },
+                }],
                 "regions": [
-                    {
-                        "id": "any",
-                        "name": "All of the availible regions"
-                    },
-                    {
-                        "id": "euro-west-fr",
-                        "name": "Europa West Frankfurt"
-                    },
-                    {
-                        "id": "euro-west-st",
-                        "name": "Europa West Stuttgart"
-                    },
-                    {
-                        "id": "asia-east1",
-                        "name": "Asia-East1-Taiwan"
-                    },
-                    {
-                        "id": "asia-east2",
-                        "name": "Asia-East2-HongKong"
-                    },
-                    {
-                        "id": "asia-south1",
-                        "name": "Asia-South1-India"
-                    },
-                    {
-                        "id": "asia-southeast1",
-                        "name": "Asia-South1-Singapur"
-                    }
-                ]
-            },
+                    "us-east-2",
+                    "us-east-1",
+					"us-west-1",
+					"us-west-2",
+					"ap-east-1",
+					"ap-south-1", 
+					"ap-northeast-3",
+					"ap-northeast-1",
+					"ca-central-1", 
+					"eu-central-1",
+					"eu-west-1" 
+                ],
             "parents": [
                 "RELATIONAL_DATABASE"
             ]
         },
-        "AZURE_BLOB_STORAGE": {
+        {
             "id": "AZURE_BLOB_STORAGE",
             "type": "Node",
             "name": "Azure Blob Storage",
             "img": "icons/AZURE_BLOB_STORAGE.png",
             "children": [],
-            "attr": {
-                "scalable": {
+            "attributes": [
+                {"id":"scalable",
                     "name": "Scalable",
                     "type": "boolean",
                     "value": true
                 },
-                "maxscalable": {
+                {"id":"maxscalable",
                     "name": "Max. Instances",
                     "type": "integer",
                     "value": 4
                 },
-                "reliability": {
+                {"id":"reliability",
                     "name": "Reliability",
                     "type": "number",
                     "value": 99.76
                 },
-                "description": {
+                {"id":"description",
                     "name": "Description",
                     "type": "string",
                     "value": "An Azure BLOB Storage instance"
                 },
-                "category": {
+                {"id":"category",
                     "name": "Category",
                     "type": "string",
                     "value": "PaaS"
-                },
-                "costs": {
-                    "name": "Costs",
-                    "type": "number",
-                    "value": 0.0156
-                },
-                "costsunit": {
-                    "name": "Cost Unit",
-                    "type": "string",
-                    "value": "h"
-                },
+                }],
                 "regions": [
-                    {
-                        "id": "any",
-                        "name": "All of the availible regions"
-                    },
-                    {
-                        "id": "euro-west-fr",
-                        "name": "Europa West Frankfurt"
-                    },
-                    {
-                        "id": "euro-west-st",
-                        "name": "Europa West Stuttgart"
-                    },
-                    {
-                        "id": "asia-east1",
-                        "name": "Asia-East1-Taiwan"
-                    },
-                    {
-                        "id": "asia-east2",
-                        "name": "Asia-East2-HongKong"
-                    },
-                    {
-                        "id": "asia-south1",
-                        "name": "Asia-South1-India"
-                    },
-                    {
-                        "id": "asia-southeast1",
-                        "name": "Asia-South1-Singapur"
-                    }
-                ]
-            },
+                    "us-east-2",
+                    "us-east-1"
+                ],
             "parents": [
                 "BLOB_STORAGE"
             ]
         },
-        "Elastic_Runtime": {
+        {
             "id": "Elastic_Runtime",
             "type": "Node",
             "name": "Elastic Runtime",
@@ -962,201 +827,171 @@
                 "Elastic_Runtime_Medium",
                 "Elastic_Runtime_Large"
             ],
-            "attr": {
-                "description": {
+            "attributes": [
+                {"id":"description",
                     "name": "Description",
                     "type": "string",
                     "value": "Runtime environment for cloud native applications."
                 },
-                "category": {
+                {"id":"category",
                     "name": "Category",
                     "type": "string",
                     "value": "SaaS"
                 }
-            }
+            ]
         },
-        "Elastic_Runtime_Micro": {
+        {
             "id": "Elastic_Runtime_Micro",
             "type": "Node",
             "name": "Elastic Runtime Micro",
             "img": "icons/Elastic_Runtime_Micro.png",
             "children": [],
-            "attr": {
-                "scalable": {
+            "attributes": [
+                {"id":"scalable",
                     "name": "Scalable",
                     "type": "boolean",
                     "value": false
                 },
-                "maxscalable": {
+                {"id":"maxscalable",
                     "name": "Max. Instances",
                     "type": "integer",
                     "value": 1
                 },
-                "reliability": {
+                {"id":"reliability",
                     "name": "Reliability",
                     "type": "number",
                     "value": 96.73
-                },
-                "costs": {
-                    "name": "Costs",
-                    "type": "number",
-                    "value": 0.001
-                },
-                "costsunit": {
-                    "name": "Cost Unit",
-                    "type": "string",
-                    "value": "h"
                 }
-            },
+            ],
             "parents": [
                 "Elastic_Runtime"
             ]
         },
-        "Elastic_Runtime_Medium": {
+        {
             "id": "Elastic_Runtime_Medium",
             "type": "Node",
             "name": "Elastic Runtime Medium",
             "img": "icons/Elastic_Runtime_Medium.png",
             "children": [],
-            "attr": {
-                "scalable": {
+            "attributes": [
+                {"id":"scalable",
                     "name": "Scalable",
                     "type": "boolean",
                     "value": false
                 },
-                "maxscalable": {
+                {"id":"maxscalable",
                     "name": "Max. Instances",
                     "type": "integer",
                     "value": 1
                 },
-                "reliability": {
+                {"id":"reliability",
                     "name": "Reliability",
                     "type": "number",
                     "value": 96.73
-                },
-                "costs": {
-                    "name": "Costs",
-                    "type": "number",
-                    "value": 0.005
-                },
-                "costsunit": {
-                    "name": "Cost Unit",
-                    "type": "string",
-                    "value": "h"
                 }
-            },
+            ],
             "parents": [
                 "Elastic_Runtime"
             ]
         },
-        "Elastic_Runtime_Large": {
+        {
             "id": "Elastic_Runtime_Large",
             "type": "Node",
             "name": "Elastic Runtime Large",
             "img": "icons/Elastic_Runtime_Large.png",
             "children": [],
-            "attr": {
-                "scalable": {
+            "attributes": [
+                {"id":"scalable",
                     "name": "Scalable",
                     "type": "boolean",
                     "value": false
                 },
-                "maxscalable": {
+                {"id":"maxscalable",
                     "name": "Max. Instances",
                     "type": "integer",
                     "value": 1
                 },
-                "reliability": {
+                {"id":"reliability",
                     "name": "Reliability",
                     "type": "number",
                     "value": 96.73
-                },
-                "costs": {
-                    "name": "Costs",
-                    "type": "number",
-                    "value": 0.01
-                },
-                "costsunit": {
-                    "name": "Cost Unit",
-                    "type": "string",
-                    "value": "h"
                 }
-            },
+            ],
             "parents": [
                 "Elastic_Runtime"
             ]
         },
-        "ACTOR_DEFAULT": {
+        {
             "id": "ACTOR_DEFAULT",
             "type": "Node",
             "name": "Default Actor",
             "img": "icons/ACTOR_DEFAULT.png",
             "children": [],
-            "attr": {
-                "reliability": {
+            "attributes":  [
+                {"id":"reliability",
                     "name": "Reliability",
                     "type": "number",
                     "value": 100
                 },
-                "category": {
+                {"id":"category",
                     "name": "Category",
                     "type": "string",
                     "value": "Actors"
                 },
-                "scalable": {
+                {"id":"scalable",
                     "name": "Scalable",
                     "type": "boolean",
                     "value": false
                 },
-                "maxscalable": {
+                {"id":"maxscalable",
                     "name": "Max. Instances",
                     "type": "integer",
                     "value": 1
                 },
-                "description": {
+                {"id":"description",
                     "name": "Description",
                     "type": "string",
-                    "value": "My Chef the bottleneck"
+                    "value": "The company xyz delivers the data."
                 }
-            }
+            ]
         },
-        "ACTOR_COMPANY_XYZ": {
+       {
             "id": "ACTOR_COMPANY_XYZ",
             "type": "Node",
             "name": "Company Xyz GmbH",
             "img": "icons/ACTOR_COMPANY_XYZ.png",
             "children": [],
-            "attr": {
-                "reliability": {
+            "attributes": [
+                {"id":"reliability",
                     "name": "Reliability",
                     "type": "number",
                     "value": 100
                 },
-                "category": {
+                {"id":"category",
                     "name": "Category",
                     "type": "string",
                     "value": "Actors"
                 },
-                "scalable": {
+                {"id":"scalable",
                     "name": "Scalable",
                     "type": "boolean",
                     "value": false
                 },
-                "maxscalable": {
+                {"id":"maxscalable",
                     "name": "Max. Instances",
                     "type": "integer",
                     "value": 1
                 },
-                "description": {
+                {"id":"description",
                     "name": "Description",
                     "type": "string",
                     "value": "The company xyz delivers the data."
                 }
-            }
+            ]
         }
-    },
-    "Edges": {
-        "EDGE_SQL_DB": {
+    ],
+    "edges": [
+        {
             "id": "EDGE_SQL_DB",
             "type": "Edge",
             "name": "SQL SELECT Statement",
@@ -1170,15 +1005,14 @@
                     "to": "DIFFERENT"
                 }
             ],
-            "attr": {
-                "comment": {
-                    "name": "Comment",
-                    "type": "string",
-                    "value": "This is a generic Comment about this edge"
-                }
-            }
+            "attributes": [{
+				"id": "comment",
+                "name": "Comment",
+                "type": "string",
+                "value": "This is a generic Comment about this edge"
+            }]
         },
-        "EDGE_HTTP_REQ": {
+         {
             "id": "EDGE_HTTP_REQ",
             "type": "Edge",
             "name": "HTTP Request",
@@ -1188,17 +1022,16 @@
                     "to": "PROCESSING"
                 }
             ],
-            "attr": {
-                "comment": {
-                    "name": "Comment",
-                    "type": "string",
-                    "value": "This is a generic Comment about this edge"
-                }
-            }
+            "attributes": [{
+				"id": "comment",
+                "name": "Comment",
+                "type": "string",
+                "value": "This is a generic Comment about this edge"
+            }]
         }
-    },
-    "Templates": {
-        "THREE_TIER_PATTERN": {
+    ],
+    "templates": [
+        {
             "id": "THREE_TIER_PATTERN",
             "name": "Three-Tier-Pattern",
             "type": "Template",
@@ -1221,7 +1054,7 @@
                 }
             ]
         },
-        "TWO_TIER_PATTERN": {
+        {
             "id": "TWO_TIER_PATTERN",
             "name": "Two-Tier-Pattern",
             "type": "Template",
@@ -1239,7 +1072,7 @@
                 }
             ]
         },
-        "VM_AS_A_SERVICE": {
+        {
             "id": "VM_AS_A_SERVICE",
             "name": "VM as a Service",
             "type": "Template",
@@ -1262,5 +1095,5 @@
                 }
             ]
         }
-    }
+    ]
 }
